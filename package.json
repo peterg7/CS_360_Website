@@ -1,0 +1,26 @@
+{
+  "name": "cs360_website",
+  "version": "1.0.0",
+  "description": "host website for cs360 assignments",
+  "main": "server.js",
+  "scripts": {
+    "test": " \"echo \\\"Error: no test specified\\\" && exit 1\"",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peterg7/CS_360_Website.git"
+  },
+  "author": "Peter Gish",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peterg7/CS_360_Website/issues"
+  },
+  "homepage": "https://github.com/peterg7/CS_360_Website#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "express": "^4.17.3",
+    "fastify": "^3.27.2",
+    "fastify-static": "^4.5.0"
+  }
+}
