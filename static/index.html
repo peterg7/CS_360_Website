@@ -4,152 +4,308 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="manifest" href="manifest.json"> -->
-
+    
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    
     <title>Peter Gish - CS 360 | Spring 2022</title>
 </head>
 <body>
-<div id="HomePage">
+    <div class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+        <div class="container">
+            <a href="https://www.cs.usfca.edu/~apjoshi/cs360/" class="navbar-brand" target="_blank">USF CS 360 - Data Visualization</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="assignments">Assignments <span class="caret"></span></a>
+                        <div class="dropdown-menu" aria-labelledby="assignments">
+                            <a class="dropdown-item" href="#A1">Assignment #1</a>
+                            <a class="dropdown-item" href="#A2">Assignment #2</a>
+                            <a class="dropdown-item" href="#A3">Assignment #3</a>
+                            <a class="dropdown-item" href="#A4">Assignment #4</a>
+                            <a class="dropdown-item" href="#A5">Assignment #5</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Help</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-md-auto">
+                    <li class="nav-item">
+                        <a target="_blank" rel="noopener" class="nav-link" href="https://github.com/thomaspark/bootswatch/"><i class="fa fa-github"></i> GitHub</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-    <div id="A2">
-        <h1>USF CS 360 - Data Visualization</h1>
+    
+    <div class="container"> 
+        <div class="page-header pt-5 mt-5" id="banner">
+            <div class="row align-items-baseline justify-content-between ">
+                <div class="col-lg-4">
+                    <div class="bs-component">
+                        <h1 style="color:steelblue;">Assignment Portfolio</h1>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bs-component">
+                        <img src="https://sites.google.com/a/cs.usfca.edu/usfcs/_/rsrc/1468755745064/config/app/images/customLogo/customLogo.gif?revision=3" alt="USF CS Department">
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <!-- A2 -->
         
-        <h2>Assignment #2 <i>Intro to p5.js</i></h2>
-        <p>
-            Check out some sample charts made using global climate change data from
-            the past 50 years!
-            <br /><br />
-            View the raw data at
-            <a href="https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data">Kaggle.com</a>
-        </p>
-
-        <div>
-            <h3>Bar Chart</h3>
-            <form action="https://vizhub.com/peterg7/cf4d74f8e8b6476ca42f0ca5633626ca?edit=files&file=sketch.js">
-                <input type="submit" value="View Bar Graph" />
-            </form>
+        <!-- A1 -->
+        
+        <div class="bs-docs-section my-5">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="page-header">
+                        <h2 id="A1">Assessment #1</h2>
+                        <p class="lead"><i>Introduction to Tableau</i></p>
+                        <p><i>Coming soon...</i></p>
+                        <p class="text-muted">
+                            Check out some sample charts made using global climate change data from
+                            the past 50 years!
+                            <br />
+                            View the raw data at
+                            <a href="https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data">Kaggle.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div>
-            <h3>Dot Plot</h3>
-            <form action="https://vizhub.com/peterg7/19b8d26ba93c44a785937fd68fb2cee9?edit=files&file=sketch.js">
-                <input type="submit" value="View Dot Plot" />
-            </form>
+        
+        <hr>
+        
+        
+        <!-- A2 -->   
+        <div class="bs-docs-section my-5">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="page-header">
+                        <h2 id="A2">Assignment #2</h2>
+                        <p class="lead"><i>Introduction to p5.js</i></p>
+                        <p>
+                            Check out some sample charts made using global climate change data from
+                            the past 50 years!
+                            <br />
+                            View the raw data at
+                            <a href="https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data">Kaggle.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="bs-component">
+                        <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+                            <div class="card-header"><i>A2 - Part I</i></div>
+                            <div class="card-body">
+                                <h4 class="card-title">Bar Chart</h4>
+                                <p class="card-text">Chart description...</p>
+                                <div class="col-lg-7">
+                                    <button type="button" class="btn btn-info" onclick="location.href='https://vizhub.com/peterg7/cf4d74f8e8b6476ca42f0ca5633626ca?edit=files&file=sketch.js'" formtarget="_blank">View Graph</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bs-component">
+                        <div class="card text-white bg-primary mb-3"  style="max-width: 20rem;">
+                            <div class="card-header"><i>A2 - Part II</i></div>
+                            <div class="card-body">
+                                <h4 class="card-title">Dot Plot</h4>
+                                <p class="card-text">Chart description...</p>
+                                <div class="col-lg-7">
+                                    <button type="button" class="btn btn-info" onclick="location.href='https://vizhub.com/peterg7/19b8d26ba93c44a785937fd68fb2cee9?edit=files&file=sketch.js'" formtarget="_blank">View Graph</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bs-component">
+                        <div class="card text-white bg-primary mb-3"  style="max-width: 20rem;">
+                            <div class="card-header"><i>A2 - Part III</i></div>
+                            <div class="card-body">
+                                <h4 class="card-title">Heat Map</h4>
+                                <p class="card-text">Chart description...</p>
+                                <div class="col-lg-7">
+                                    <button type="button" class="btn btn-info" onclick="location.href='https://vizhub.com/peterg7/d9df342de2894c64b80bf819db6c3965?edit=files&file=sketch.js'" formtarget="_blank">View Graph</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div>
-            <h3>Heat Map</h3>
-            <form action="https://vizhub.com/peterg7/d9df342de2894c64b80bf819db6c3965?edit=files&file=sketch.js">
-                <input type="submit" value="View Heat Map" />
-            </form>
+        
+        <hr>
+        <!-- A3 -->
+        
+        <div class="bs-docs-section my-5">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="page-header">
+                        <h2 id="A3">Assessment #3</h2>
+                        <p class="lead"><i>Visualizing Distributions using P5</i></p>
+                        <p><i>Coming soon...</i></p>
+                        <p class="text-muted">
+                            Check out some sample charts made using global climate change data from
+                            the past 50 years!
+                            <br />
+                            View the raw data at
+                            <a href="https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data">Kaggle.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <!-- A3 -->
-
-    <div id="A3">
-        <h2>Assessment #3 <i>Visualizing Distributions using P5</i></h2>
-        <p>
-            <i>Coming soon</i>
-        </p>
-    </div>
-
-    <!-- A4 -->
-
-    <div id="A4">
-        <h2>Assessment #4 <i>Introduction to D3</i></h2>
-        <p>
-            Check out some sample charts made using census data regarding energy
-            usage from Chicago in 2010!
-            <br /><br />
-            View the raw data at
-            <a href="https://www.kaggle.com/chicago/chicago-energy-usage-2010">Kaggle.com</a>
-        </p>
-
-        <div>
-            <h3>Bar Chart</h3>
-            <form action="https://vizhub.com/peterg7/0305dfadd0d442f3b70595142bd62621?edit=files&file=bar_chart.js">
-                <input type="submit" value="View Bar Graph" />
-            </form>
+        
+        <hr>
+        <!-- A4 -->
+        
+        <div class="bs-docs-section my-5">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="page-header">
+                        <h2 id="A4">Assessment #4</h2>
+                        <p class="lead"><i>Introduction to D3</i></p>
+                        <p>
+                            Check out some sample charts made using census data regarding energy
+                            usage from Chicago in 2010!
+                            <br />
+                            View the raw data at
+                            <a href="https://www.kaggle.com/chicago/chicago-energy-usage-2010">Kaggle.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="bs-component">
+                        <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+                            <div class="card-header"><i>A4 - Part I</i></div>
+                            <div class="card-body">
+                                <h4 class="card-title">Bubble Chart</h4>
+                                <p class="card-text">Chart description...</p>
+                                <div class="col-lg-7">
+                                    <button type="button" class="btn btn-info" onclick="location.href='https://vizhub.com/peterg7/0305dfadd0d442f3b70595142bd62621?edit=files&file=bar_chart.js'" formtarget="_blank">View Graph</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bs-component">
+                        <div class="card text-white bg-primary mb-3"  style="max-width: 20rem;">
+                            <div class="card-header"><i>A4 - Part II</i></div>
+                            <div class="card-body">
+                                <h4 class="card-title">Line Chart</h4>
+                                <p class="card-text">Chart description...</p>
+                                <div class="col-lg-7">
+                                    <button type="button" class="btn btn-info" onclick="location.href='https://vizhub.com/peterg7/819ae85b30874c5eb5aea987d3bb0fd2?edit=files&file=skatter_plot.js'" formtarget="_blank">View Graph</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div>
-            <h3>Scatter Plot</h3>
-            <form action="https://vizhub.com/peterg7/819ae85b30874c5eb5aea987d3bb0fd2?edit=files&file=skatter_plot.js">
-                <input type="submit" value="View Scatter Plot" />
-            </form>
+        
+        <hr>
+        <!-- A5 -->
+        
+        <div class="bs-docs-section my-5">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="page-header">
+                        <h2 id="A5">Assignment #5</h2>
+                        <p class="lead"><i>Multidimensional Visualization in D3</i></p>
+                        <p>
+                            Here are some really cool graphs showing population trends of honey
+                            bees in the US from 2015 - 2022!
+                            <br />
+                            View the raw data at
+                            <a href="https://www.kaggle.com/kyleahmurphy/nass-honey-bee-20152021">Kaggle.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="bs-component">
+                        <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+                            <div class="card-header"><i>A5 - Part I</i></div>
+                            <div class="card-body">
+                                <h4 class="card-title">Bubble Chart</h4>
+                                <p class="card-text">Chart description...</p>
+                                <div class="col-lg-7">
+                                    <button type="button" class="btn btn-info" onclick="location.href='https://vizhub.com/peterg7/e547cff360784e8b9966678fa49cb316?edit=files&file=bubble_chart.js'" formtarget="_blank">View Graph</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bs-component">
+                        <div class="card text-white bg-primary mb-3"  style="max-width: 20rem;">
+                            <div class="card-header"><i>A5 - Part II</i></div>
+                            <div class="card-body">
+                                <h4 class="card-title">Line Chart</h4>
+                                <p class="card-text">Chart description...</p>
+                                <div class="col-lg-7">
+                                    <button type="button" class="btn btn-info" onclick="location.href='https://vizhub.com/peterg7/f9dcf323daf846b6a8f0ee390519f0f9?edit=files&file=line_chart.js'" formtarget="_blank">View Graph</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bs-component">
+                        <div class="card text-white bg-primary mb-3"  style="max-width: 20rem;">
+                            <div class="card-header"><i>A5 - Part III</i></div>
+                            <div class="card-body">
+                                <h4 class="card-title">Scatterplot Matrix</h4>
+                                <p class="card-text">Chart description...</p>
+                                <div class="col-lg-7">
+                                    <button type="button" class="btn btn-info" onclick="location.href='https://vizhub.com/peterg7/9bff68000e684198a1194fbae387f759?edit=files&file=scatterplot_matrix.js'" formtarget="_blank">View Graph</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <!-- A4 -->
-
-    <div id="A5">
-        <h2>Assessment #5 <i>Multidimensional Visualization in D3</i></h2>
-        <p>
-            Here are some really cool graphs showing population trends of honey
-            bees in the US from 2015 - 2022!
-            <br /><br />
-            View the raw data at
-            <a href="https://www.kaggle.com/kyleahmurphy/nass-honey-bee-20152021">Kaggle.com</a>
-        </p>
-
-        <div>
-            <h3>Bubble Chart</h3>
-            <form action="https://vizhub.com/peterg7/0305dfadd0d442f3b70595142bd62621?edit=files&file=bar_chart.js">
-                <input type="submit" value="View Bubble Chart" />
-            </form>
-        </div>
-
-        <div>
-            <h3>Line Chart</h3>
-            <form action="https://vizhub.com/peterg7/0305dfadd0d442f3b70595142bd62621?edit=files&file=bar_chart.js">
-                <input type="submit" value="View Line Chart" />
-            </form>
-        </div>
-
-        <div>
-            <h3>Scatterplot Matrix</h3>
-            <form action="https://vizhub.com/peterg7/0305dfadd0d442f3b70595142bd62621?edit=files&file=bar_chart.js">
-                <input type="submit" value="View Scatterplot Matrix" />
-            </form>
-        </div>
+        
+        <footer id="footer">
+            <div class="row pt-5">
+                <div class="col-lg-12">
+                    <ul class="list-unstyled">
+                        <li class="float-end"><a href="#top">Back to top</a></li>
+                        <li>By Peter Gish</li>
+                        <li>USF CS Department</li>
+                        <li>Spring 2022</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        
     </div>
     
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script type="module">
-    import Interface from "./index.js";
-    var view = new Interface();
-    view.init();
-</script>
-
-<noscript>
-    <p> You need JavaScript enabled... </p>
-</noscript>
-
+    <noscript>
+        <p> You need JavaScript enabled... </p>
+    </noscript>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
