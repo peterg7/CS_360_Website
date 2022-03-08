@@ -23,6 +23,7 @@
     "express": "^4.17.3",
     "fastify": "^3.27.2",
     "fastify-static": "^4.5.0",
+    "font-awesome": "^4.7.0",
     "jquery": "^3.6.0"
   }
 }

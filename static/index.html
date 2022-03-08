@@ -1,311 +1,631 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js">
 <head>
+    
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="manifest" href="manifest.json"> -->
-    
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="icon" href="assets/favicon.ico">
     <title>Peter Gish - CS 360 | Spring 2022</title>
+    
+    
+    <!-- CSS Files ================================================== -->
+    <!-- Twitter Bootstrs CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/bootstrap.min.css">
+    <!-- Ionicons Fonts Css -->
+    <link rel="stylesheet" href="assets/plugins/ionicons/ionicons.min.css">
+    <!-- animate css -->
+    <link rel="stylesheet" href="assets/plugins/animate-css/animate.css">
+    <!-- Hero area slider css-->
+    <link rel="stylesheet" href="assets/plugins/slider/slider.css">
+    <!-- slick slider -->
+    <link rel="stylesheet" href="assets/plugins/slick/slick.css">
+    <!-- Fancybox -->
+    <link rel="stylesheet" href="assets/plugins/fancybox/jquery.fancybox.css">
+    <!-- hover -->
+    <link rel="stylesheet" href="assets/plugins/hover/hover-min.css">
+    <!-- template main css file -->
+    <link rel="stylesheet" href="style/css/style.css">
 </head>
 <body>
-    <div class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-        <div class="container">
-            <a href="https://www.cs.usfca.edu/~apjoshi/cs360/" class="navbar-brand" target="_blank">USF CS 360 - Data Visualization</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="assignments">Assignments <span class="caret"></span></a>
-                        <div class="dropdown-menu" aria-labelledby="assignments">
-                            <a class="dropdown-item" href="#A1">Assignment #1</a>
-                            <a class="dropdown-item" href="#A2">Assignment #2</a>
-                            <a class="dropdown-item" href="#A3">Assignment #3</a>
-                            <a class="dropdown-item" href="#A4">Assignment #4</a>
-                            <a class="dropdown-item" href="#A5">Assignment #5</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">Help</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ms-md-auto">
-                    <li class="nav-item">
-                        <a target="_blank" rel="noopener" class="nav-link" href="https://github.com/thomaspark/bootswatch/"><i class="fa fa-github"></i> GitHub</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
     
-    <div class="container"> 
-        <div class="page-header pt-5 mt-5" id="banner">
-            <div class="row align-items-baseline justify-content-between ">
-                <div class="col-lg-4">
-                    <div class="bs-component">
-                        <h1 style="color:steelblue;">Assignment Portfolio</h1>
-                    </div>
+    <!-- NavBar -->
+    <section class="top-bar animated-header">
+        <div class="container" >
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <a class="navbar-brand" href="https://www.cs.usfca.edu/~apjoshi/cs360/index.html">
+                            <img src="assets/images/usf_cs.png" alt="USF CS Department">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Home
+                                        <span class="sr-only">(current)</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Assignments
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="pages/404.html">404 Page</a>
+                                        <a class="dropdown-item" href="pages/gallery.html">Gallery</a>
+                                        <a class="dropdown-item" href="pages/single-post.html">Single Post</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/about.html">Help</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
-                <div class="col-lg-4">
-                    <div class="bs-component">
-                        <img src="https://sites.google.com/a/cs.usfca.edu/usfcs/_/rsrc/1468755745064/config/app/images/customLogo/customLogo.gif?revision=3" alt="USF CS Department">
+            </div>
+        </div>
+    </section>
+    
+    <!-- Header -->
+    
+    <section id="hero-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center img-wrapper">
+                    <div class="block wow fadeInUp" data-wow-delay=".3s">
+                        <section class="cd-intro">
+                            <h1 class="wow fadeInUp animated cd-headline slide" data-wow-delay=".4s" >
+                                <span>Peter Gish</span><br>
+                            </h1>
+                            <h2>USF CS 360 Assignment Portfolio</h2>
+                        </section>
+                        <img src="assets/images/data-vis.png" class="img-fluid" alt="USF CS 350" >
                     </div>
                 </div>
             </div>
         </div>
-
-        
-        <!-- A1 -->
-        
-        <div class="bs-docs-section my-5">
+    </section>
+    
+    <!-- Class Description-->
+    
+    <section id="feature">
+        <div class="container">
+            <div class="section-heading">
+                <section class="cd-intro">
+                    <h1 class="animated cd-headline slide">
+                        <span>USF CS 360 - Data </span>
+                        <span class="cd-words-wrapper">
+                            <b class="is-visible">Visualization</b>
+                            <b>Mainpulation</b>
+                            <b>Presentation</b>
+                        </span>
+                    </h1>
+                </section>
+            </div>
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="page-header">
-                        <h2 id="A1">Assessment #1</h2>
-                        <p class="lead"><i>Introduction to Tableau</i></p>
-                        <p><i>Coming soon...</i></p>
-                        <p class="text-muted">
-                            Check out some sample charts made using global climate change data from
-                            the past 50 years!
-                            <br />
-                            View the raw data at
-                            <a href="https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data">Kaggle.com</a>
-                        </p>
+                <div class="col-sm-6 col-lg-6">
+                    <div class="media wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <div class="media-left">
+                            <div class="icon">
+                                <i class="ion-wrench"></i>
+                            </div>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Fundamentals</h4>
+                            <p> Working with data sources, building representations, and maintaining graphical integrity. </p>
+                        </div>
                     </div>
                 </div>
+                <div class="col-sm-6 col-lg-6">
+                    <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="1200ms">
+                        <div class="media-left">
+                            <div class="icon">
+                                <i class="ion-pinpoint"></i>
+                            </div>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Wide scope</h4>
+                            <p>Work with scalers, vectors, and high-dimensional data</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-6">
+                    <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="1200ms">
+                        <div class="media-left">
+                            <div class="icon">
+                                <i class="ion-erlenmeyer-flask"></i>
+                            </div>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Theory</h4>
+                            <p>Explore perception and color theory</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-6">
+                    <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="1200ms">
+                        <div class="media-left">
+                            <div class="icon">
+                                <i class="ion-earth"></i>
+                            </div>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Real-world Application</h4>
+                            <p>Investigate data from medical imaging, social media, sports, security and surveillance domains</p>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
-        
-        <hr>
-        
-        
-        <!-- A2 -->   
-        <div class="bs-docs-section my-5">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="page-header">
-                        <h2 id="A2">Assignment #2</h2>
-                        <p class="lead"><i>Introduction to p5.js</i></p>
-                        <p>
-                            Check out some sample charts made using global climate change data from
-                            the past 50 years!
-                            <br />
-                            View the raw data at
-                            <a href="https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data">Kaggle.com</a>
-                        </p>
-                    </div>
-                </div>
+    </section>
+    
+    
+    <!-- Assignments -->
+    <section id="works">
+        <div class="container">
+            <div class="section-heading">
+                <h1 class="wow fadeInDown" data-wow-delay=".3s">Assignments</h1>
+                <p class="wow fadeInDown" data-wow-delay=".5s">
+                    See my class projects
+                </p>
             </div>
             
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="bs-component">
-                        <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
-                            <div class="card-header"><i>A2 - Part I</i></div>
-                            <div class="card-body">
-                                <h4 class="card-title">Bar Chart</h4>
-                                <p class="card-text">Chart description...</p>
-                                <div class="col-lg-7">
-                                    <button type="button" class="btn btn-info" onclick="location.href='https://vizhub.com/peterg7/cf4d74f8e8b6476ca42f0ca5633626ca?edit=files&file=sketch.js'" formtarget="_blank">View Graph</button>
-                                </div>
+            <!-- A1 -->
+            <section id="about" class="with-btm-border">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms">
+                            <h2 id="A1" class="title">Assessment #1 <p class="subtitle"><i>Introduction to Tableau</i></p></h2>
+                            
+                            <div class="block">
+                                <p>
+                                    Check out some sample charts made using global climate change data from
+                                    the past 50 years!
+                                    <br/><br/>
+                                    View the raw data at
+                                    <a href="https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data">Kaggle.com</a>
+                                </p>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="bs-component">
-                        <div class="card text-white bg-primary mb-3"  style="max-width: 20rem;">
-                            <div class="card-header"><i>A2 - Part II</i></div>
-                            <div class="card-body">
-                                <h4 class="card-title">Dot Plot</h4>
-                                <p class="card-text">Chart description...</p>
-                                <div class="col-lg-7">
-                                    <button type="button" class="btn btn-info" onclick="location.href='https://vizhub.com/peterg7/19b8d26ba93c44a785937fd68fb2cee9?edit=files&file=sketch.js'" formtarget="_blank">View Graph</button>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="0ms">
+                            <div class="img-wrapper">
+                                <img src="assets/images/a1/heat_map.png" class="img-fluid" alt="this is a title" >
+                                <div class="overlay">
+                                    <div class="buttons">
+                                        <a data-fancybox data-type="pdf" href="core/a1/tableau_storyboard.pdf">Demo</a>
+                                        <a target="_blank" href="https://github.com/peterg7/CS_360_A1">Details</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                            <figcaption>
+                                <h4>
+                                    <a href="https://github.com/peterg7/CS_360_A1">
+                                        Tableau Storyboard
+                                    </a>
+                                </h4>
+                                <p>
+                                    Global surface temperature anaylysis 1750-2022
+                                </p>
+                            </figcaption>
+                        </figure>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="bs-component">
-                        <div class="card text-white bg-primary mb-3"  style="max-width: 20rem;">
-                            <div class="card-header"><i>A2 - Part III</i></div>
-                            <div class="card-body">
-                                <h4 class="card-title">Heat Map</h4>
-                                <p class="card-text">Chart description...</p>
-                                <div class="col-lg-7">
-                                    <button type="button" class="btn btn-info" onclick="location.href='https://vizhub.com/peterg7/d9df342de2894c64b80bf819db6c3965?edit=files&file=sketch.js'" formtarget="_blank">View Graph</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <hr>
-        <!-- A3 -->
-        
-        <div class="bs-docs-section my-5">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="page-header">
-                        <h2 id="A3">Assessment #3</h2>
-                        <p class="lead"><i>Visualizing Distributions using P5</i></p>
-                        <p><i>Coming soon...</i></p>
-                        <p class="text-muted">
-                            Check out some sample charts made using global climate change data from
-                            the past 50 years!
-                            <br />
-                            View the raw data at
-                            <a href="https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data">Kaggle.com</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <hr>
-        <!-- A4 -->
-        
-        <div class="bs-docs-section my-5">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="page-header">
-                        <h2 id="A4">Assessment #4</h2>
-                        <p class="lead"><i>Introduction to D3</i></p>
-                        <p>
-                            Check out some sample charts made using census data regarding energy
-                            usage from Chicago in 2010!
-                            <br />
-                            View the raw data at
-                            <a href="https://www.kaggle.com/chicago/chicago-energy-usage-2010">Kaggle.com</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
+            </section>
             
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="bs-component">
-                        <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
-                            <div class="card-header"><i>A4 - Part I</i></div>
-                            <div class="card-body">
-                                <h4 class="card-title">Bubble Chart</h4>
-                                <p class="card-text">Chart description...</p>
-                                <div class="col-lg-7">
-                                    <button type="button" class="btn btn-info" onclick="location.href='https://vizhub.com/peterg7/0305dfadd0d442f3b70595142bd62621?edit=files&file=bar_chart.js'" formtarget="_blank">View Graph</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="bs-component">
-                        <div class="card text-white bg-primary mb-3"  style="max-width: 20rem;">
-                            <div class="card-header"><i>A4 - Part II</i></div>
-                            <div class="card-body">
-                                <h4 class="card-title">Line Chart</h4>
-                                <p class="card-text">Chart description...</p>
-                                <div class="col-lg-7">
-                                    <button type="button" class="btn btn-info" onclick="location.href='https://vizhub.com/peterg7/819ae85b30874c5eb5aea987d3bb0fd2?edit=files&file=skatter_plot.js'" formtarget="_blank">View Graph</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <hr>
-        <!-- A5 -->
-        
-        <div class="bs-docs-section my-5">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="page-header">
-                        <h2 id="A5">Assignment #5</h2>
-                        <p class="lead"><i>Multidimensional Visualization in D3</i></p>
-                        <p>
-                            Here are some really cool graphs showing population trends of honey
-                            bees in the US from 2015 - 2022!
-                            <br />
-                            View the raw data at
-                            <a href="https://www.kaggle.com/kyleahmurphy/nass-honey-bee-20152021">Kaggle.com</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
+            <!-- A2 -->
             
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="bs-component">
-                        <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
-                            <div class="card-header"><i>A5 - Part I</i></div>
-                            <div class="card-body">
-                                <h4 class="card-title">Bubble Chart</h4>
-                                <p class="card-text">Chart description...</p>
-                                <div class="col-lg-7">
-                                    <button type="button" class="btn btn-info" onclick="location.href='https://vizhub.com/peterg7/e547cff360784e8b9966678fa49cb316?edit=files&file=bubble_chart.js'" formtarget="_blank">View Graph</button>
-                                </div>
+            <section id="about" class="with-btm-border">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms">
+                            <h2 id="A2" class="title">Assignment #2 <p class="subtitle"><i>Introduction to p5.js</i></p></h2>
+                            <div class="block">
+                                <p>
+                                    Check out some sample charts made using global climate change data from
+                                    the past 50 years!
+                                    <br/><br/>
+                                    View the raw data at
+                                    <a href="https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data">Kaggle.com</a>
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="bs-component">
-                        <div class="card text-white bg-primary mb-3"  style="max-width: 20rem;">
-                            <div class="card-header"><i>A5 - Part II</i></div>
-                            <div class="card-body">
-                                <h4 class="card-title">Line Chart</h4>
-                                <p class="card-text">Chart description...</p>
-                                <div class="col-lg-7">
-                                    <button type="button" class="btn btn-info" onclick="location.href='https://vizhub.com/peterg7/f9dcf323daf846b6a8f0ee390519f0f9?edit=files&file=line_chart.js'" formtarget="_blank">View Graph</button>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
+                            <div class="img-wrapper">
+                                <img src="assets/images/a2/bar_graph.png" class="img-fluid" alt="this is a title" >
+                                <div class="overlay">
+                                    <div class="buttons">
+                                        <a data-fancybox data-type="iframe" href="https://vizhub.com/peterg7/cf4d74f8e8b6476ca42f0ca5633626ca?mode=embed">Demo</a>
+                                        <a target="_blank" href="https://vizhub.com/peterg7/cf4d74f8e8b6476ca42f0ca5633626ca">Details</a>
+                                    </div>
                                 </div>
+                            </div>
+                            <figcaption>
+                                <h4>
+                                    <a href="https://vizhub.com/peterg7/cf4d74f8e8b6476ca42f0ca5633626ca">
+                                        Bar Chart
+                                    </a>
+                                </h4>
+                                <p>
+                                    Global average temperature 1750-2022
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <div class="img-wrapper">
+                                <img src="assets/images/a2/dot_plot.png" class="img-fluid" alt="this is a title" >
+                                <div class="overlay">
+                                    <div class="buttons">
+                                        <a data-fancybox data-type="iframe" href="https://vizhub.com/peterg7/19b8d26ba93c44a785937fd68fb2cee9?mode=embed">Demo</a>
+                                        <a target="_blank" href="https://vizhub.com/peterg7/19b8d26ba93c44a785937fd68fb2cee9">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <figcaption>
+                                <h4>
+                                    <a href="https://vizhub.com/peterg7/19b8d26ba93c44a785937fd68fb2cee9">
+                                        Dot Plot
+                                    </a>
+                                </h4>
+                                <p>
+                                    Temperature measurement uncertainty
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <div class="img-wrapper">
+                                <img src="assets/images/a2/heat_map.png" class="img-fluid" alt="" >
+                                <div class="overlay">
+                                    <div class="buttons">
+                                        <a data-fancybox data-type="iframe" href="https://vizhub.com/peterg7/d9df342de2894c64b80bf819db6c3965?mode=embed">Demo</a>
+                                        <a target="_blank" href="https://vizhub.com/peterg7/d9df342de2894c64b80bf819db6c3965">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <figcaption>
+                                <h4>
+                                    <a href="https://vizhub.com/peterg7/d9df342de2894c64b80bf819db6c3965">
+                                        Heat Map
+                                    </a>
+                                </h4>
+                                <p>
+                                    Average temperature by month
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- A3 -->
+            
+            <section id="about" class="with-btm-border">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms">
+                            <h2 id="A3" class="title">Assessment #3 <p class="subtitle"><i>Visualizing Distributions using P5</i></p></h2>
+                            <div class="block">
+                                <p>
+                                    Check out some sample charts made using data from the city of Chicago in 2010
+                                    regarding energy usage and infrastructure!
+                                    <br/><br/>
+                                    View the raw data at
+                                    <a href="https://www.kaggle.com/chicago/chicago-energy-usage-2010">Kaggle.com</a>
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="600ms">
+                            <div class="img-wrapper">
+                                <img src="assets/images/a3/box_plot.png" class="img-fluid" alt="" >
+                                <div class="overlay">
+                                    <div class="buttons">
+                                        <a data-fancybox data-type="iframe" href="https://vizhub.com/peterg7/9c21926c5b5e4d3a8c38cfa7a7046aa9?mode=embed">Demo</a>
+                                        <a target="_blank" href="https://vizhub.com/peterg7/9c21926c5b5e4d3a8c38cfa7a7046aa9">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <figcaption>
+                                <h4>
+                                    <a href="https://vizhub.com/peterg7/9c21926c5b5e4d3a8c38cfa7a7046aa9">
+                                        Box Plot
+                                    </a>
+                                </h4>
+                                <p>
+                                    Building age per census block
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="900ms">
+                            <div class="img-wrapper">
+                                <img src="assets/images/a3/histogram.png" class="img-fluid" alt="" >
+                                <div class="overlay">
+                                    <div class="buttons">
+                                        <a data-fancybox data-type="iframe" href="https://vizhub.com/peterg7/617ccbbd3f8e48cf99025e5fcb824df9?mode=embed">Demo</a>
+                                        <a target="_blank" href="https://vizhub.com/peterg7/617ccbbd3f8e48cf99025e5fcb824df9">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <figcaption>
+                                <h4>
+                                    <a href="https://vizhub.com/peterg7/617ccbbd3f8e48cf99025e5fcb824df9">
+                                        Histogram
+                                    </a>
+                                </h4>
+                                <p>
+                                    Energy consuption by population
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- A4 -->
+            
+            <section id="about" class="with-btm-border">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms">
+                            <h2 id="A4" class="title">Assessment #4 <p class="subtitle"><i>Introduction to D3</i></p></h2>
+                            <div class="block">
+                                <p>
+                                    Check out some sample charts made using census data regarding energy
+                                    usage from Chicago in 2010!
+                                    <br/><br>
+                                    View the raw data at
+                                    <a href="https://www.kaggle.com/chicago/chicago-energy-usage-2010">Kaggle.com</a>
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="bs-component">
-                        <div class="card text-white bg-primary mb-3"  style="max-width: 20rem;">
-                            <div class="card-header"><i>A5 - Part III</i></div>
-                            <div class="card-body">
-                                <h4 class="card-title">Scatterplot Matrix</h4>
-                                <p class="card-text">Chart description...</p>
-                                <div class="col-lg-7">
-                                    <button type="button" class="btn btn-info" onclick="location.href='https://vizhub.com/peterg7/9bff68000e684198a1194fbae387f759?edit=files&file=scatterplot_matrix.js'" formtarget="_blank">View Graph</button>
+                
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="600ms">
+                            <div class="img-wrapper">
+                                <img src="assets/images/a4/bar_chart.png" class="img-fluid" alt="" >
+                                <div class="overlay">
+                                    <div class="buttons">
+                                        <a data-fancybox data-type="iframe" href="https://vizhub.com/peterg7/0305dfadd0d442f3b70595142bd62621?mode=embed">Demo</a>
+                                        <a target="_blank" href="https://vizhub.com/peterg7/9c21926c5b5e4d3a8c38cfa7a7046aa9">Details</a>
+                                    </div>
                                 </div>
+                            </div>
+                            <figcaption>
+                                <h4>
+                                    <a href="https://vizhub.com/peterg7/9c21926c5b5e4d3a8c38cfa7a7046aa9">
+                                        Bar Chart
+                                    </a>
+                                </h4>
+                                <p>
+                                    Communities with most thermostats
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="900ms">
+                            <div class="img-wrapper">
+                                <img src="assets/images/a4/scatterplot.png" class="img-fluid" alt="" >
+                                <div class="overlay">
+                                    <div class="buttons">
+                                        <a data-fancybox data-type="iframe" href="https://vizhub.com/peterg7/819ae85b30874c5eb5aea987d3bb0fd2?mode=embed">Demo</a>
+                                        <a target="_blank" href="https://vizhub.com/peterg7/617ccbbd3f8e48cf99025e5fcb824df9">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <figcaption>
+                                <h4>
+                                    <a href="https://vizhub.com/peterg7/617ccbbd3f8e48cf99025e5fcb824df9">
+                                        Scatterplot
+                                    </a>
+                                </h4>
+                                <p>
+                                    Thermostats by population
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- A5 -->
+            
+            <section id="about" class="with-btm-border">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms">
+                            <h2 id="A5" class="title">Assignment #5 <p class="subtitle"><i>Multidimensional Visualization in D3</i></p></h2>
+                            <div class="block">
+                                <p>
+                                    Here are some really cool graphs showing population trends of honey
+                                    bees in the US from 2015 - 2022!
+                                    <br/><br/>
+                                    View the raw data at
+                                    <a href="https://www.kaggle.com/kyleahmurphy/nass-honey-bee-20152021">Kaggle.com</a>
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="600ms">
+                            <div class="img-wrapper">
+                                <img src="assets/images/a5/bubble_chart.png" class="img-fluid" alt="" >
+                                <div class="overlay">
+                                    <div class="buttons">
+                                        <a data-fancybox data-type="iframe" href="https://vizhub.com/peterg7/e547cff360784e8b9966678fa49cb316?mode=embed">Demo</a>
+                                        <a target="_blank" href="https://vizhub.com/peterg7/e547cff360784e8b9966678fa49cb316">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <figcaption>
+                                <h4>
+                                    <a href="https://vizhub.com/peterg7/e547cff360784e8b9966678fa49cb316">
+                                        Bubble Chart
+                                    </a>
+                                </h4>
+                                <p>
+                                    Bee population trends by initial population
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="900ms">
+                            <div class="img-wrapper">
+                                <img src="assets/images/a5/line_chart.png" class="img-fluid" alt="" >
+                                <div class="overlay">
+                                    <div class="buttons">
+                                        <a data-fancybox data-type="iframe" href="https://vizhub.com/peterg7/f9dcf323daf846b6a8f0ee390519f0f9?mode=embed">Demo</a>
+                                        <a target="_blank" href="https://vizhub.com/peterg7/f9dcf323daf846b6a8f0ee390519f0f9">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <figcaption>
+                                <h4>
+                                    <a href="https://vizhub.com/peterg7/f9dcf323daf846b6a8f0ee390519f0f9">
+                                        Line Graph
+                                    </a>
+                                </h4>
+                                <p>
+                                    Initial bee population each quarter
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="1200ms">
+                            <div class="img-wrapper">
+                                <img src="assets/images/a5/scatter_matrix.png" class="img-fluid" alt="" >
+                                <div class="overlay">
+                                    <div class="buttons">
+                                        <a data-fancybox data-type="iframe" href="https://vizhub.com/peterg7/9bff68000e684198a1194fbae387f759?mode=embed">Demo</a>
+                                        <a target="_blank" href="https://vizhub.com/peterg7/9bff68000e684198a1194fbae387f759">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <figcaption>
+                                <h4>
+                                    <a href="https://vizhub.com/peterg7/9bff68000e684198a1194fbae387f759">
+                                        Scatter Matrix
+                                    </a>
+                                </h4>
+                                <p>
+                                    Be populations of largest states
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- A6 -->
+            
+            <section id="about">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms">
+                            <h2 id="A6" class="title">Assessment #6 <p class="subtitle"><i>Color Scales in D3</i></p></h2>
+                            
+                            <div class="block">
+                                <p>
+                                    Here are some really cool graphs showing population trends of honey
+                                    bees in the US from 2015 - 2022!
+                                    <br />
+                                    View the raw data at
+                                    <a href="https://www.kaggle.com/kyleahmurphy/nass-honey-bee-20152021">Kaggle.com</a>
+                                </p>
+                            </div>
+                            <p><i>Coming soon...</i></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-        
-        <footer id="footer">
-            <div class="row pt-5">
-                <div class="col-lg-12">
-                    <ul class="list-unstyled">
-                        <li class="float-end"><a href="#top">Back to top</a></li>
+    </section>
+    
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row content-justify-between mt-5">
+                <div class="col-md-8 col-12 text-center text-lg-left text-md-left">
+                    <ul>
                         <li>By Peter Gish</li>
                         <li>USF CS Department</li>
                         <li>Spring 2022</li>
                     </ul>
+                    <p class="copyright">
+                        Copyright: Design by <a href="http://www.Themefisher.com" target="_blank">Themefisher</a>. <br> 
+                    </p>
+                </div>
+                
+                <div class="col-md-4 col-12">
+                    <!-- Social Media -->
+                    <ul class="social text-center text-md-right text-lg-right">
+                        <li>
+                            
+                            <a href="https://github.com/peterg7" class="icon" target="_blank">
+                                <i class="ion-social-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/peter-gish/" class="icon" target="_blank">
+                                <i class="ion-social-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </footer>
-        
-    </div>
+        </div>
+    </footer>
     
-    <noscript>
-        <p> You need JavaScript enabled... </p>
-    </noscript>
-    <script src="../js/bootstrap.bundle.min.js"></script>
+    <!-- Template Javascript Files -->
+    <!-- jquery -->
+    <script src="assets/plugins/jQurey/jquery.min.js"></script>
+    <!-- Form Validation -->
+    <script src="assets/plugins/form-validation/jquery.form.js"></script> 
+    <script src="assets/plugins/form-validation/jquery.validate.min.js"></script>
+    <!-- slick slider -->
+    <script src="assets/plugins/slick/slick.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="assets/plugins/bootstrap/bootstrap.min.js"></script>
+    <!-- wow js -->
+    <script src="assets/plugins/wow-js/wow.min.js"></script>
+    <!-- slider js -->
+    <script src="assets/plugins/slider/slider.js"></script>
+    <!-- Fancybox -->
+    <script src="assets/plugins/fancybox/jquery.fancybox.js"></script>
+    <!-- template main js -->
+    <script src="style/js/main.js"></script>
 </body>
 </html>
