@@ -46,7 +46,7 @@
 							<img src="../assets/images/usf_cs.png" alt="USF CS Department">
 						</a>
 						<li class="nav-item">
-							<a class="nav-link" href="index.html">Home
+							<a class="nav-link" href="../index.html">Home
 								<span class="sr-only">(current)</span>
 							</a>
 						</li>
@@ -320,7 +320,7 @@
 								</li>
 							</ol>
 						</div>
-						<div class="block m-3 pt-3 wow fadeInLeft" data-wow-delay="900ms" data-wow-duration="500ms">
+						<div class="block m-3 pt-3 wow fadeInLeft" data-wow-delay="800ms" data-wow-duration="500ms">
 							<h4 id="part1-transform">Transform<a name="part1_transform"></a></h4>
 							<ol start='' >
 								<li><p>Collect bigrams from tweet text</p></li>
@@ -332,7 +332,7 @@
 								<li><p>Store sentiment of every tweet extracted from clusters</p></li>
 							</ol>
 						</div>
-						<div class="block m-3 pt-3 wow fadeInLeft" data-wow-delay="1100ms" data-wow-duration="500ms">
+						<div class="block m-3 pt-3 wow fadeInLeft" data-wow-delay="900ms" data-wow-duration="500ms">
 							<h5 id="part1-model">Model<a name="part1_model"></a></h5>
 							<ol start='' >
 								<li><p>Build training and testing datasets from the sentiment dataframe built above</p></li>
@@ -345,7 +345,7 @@
 								<li><p>Export the &quot;higher performing&quot; algorithm to be used in Part 2</p></li>
 							</ol>
 						</div>
-						<div class="block m-3 pt-3 wow fadeInLeft" data-wow-delay="1300ms" data-wow-duration="500ms">
+						<div class="block m-3 pt-3 pb-3 wow fadeInLeft" data-wow-delay="1000ms" data-wow-duration="500ms">
 							<h4 id="part1-load">Load<a name="part1_load"></a></h4>
 							<ol start='' >
 								<li><p>Save datasets &amp; embeddings along pipeline to local directory</p></li>
@@ -363,7 +363,7 @@
 								<li><p>- Same as <a href='#part1_extract'>Part 1 Pipeline - Extract</a> with the generalized dataset described in <a href='#data'>Data</a></p></li>
 							</ul>
 						</div>
-						<div class="block m-3 pt-3 wow fadeInLeft" data-wow-delay="900ms" data-wow-duration="500ms">
+						<div class="block m-3 pt-3 wow fadeInLeft" data-wow-delay="800ms" data-wow-duration="500ms">
 							<h4 id="part2-transform">Transform<a name="part2_transform"></a></h4>
 							<ol start='' >
 								<li><p>Import vector model created in <a href='#part1_transform'>Part 1 Pipeline - Transform</a></p></li>
@@ -373,7 +373,7 @@
 								<li><p>Map model outputs to sentiment encodings and original tweets</p></li>
 							</ol>
 						</div>
-						<div class="block m-3 pt-3 wow fadeInLeft" data-wow-delay=1100ms data-wow-duration="500ms">
+						<div class="block m-3 pt-3 pb-3 wow fadeInLeft" data-wow-delay=900ms data-wow-duration="500ms">
 							<h4 id="part2-load">Load<a name="part2_load"></a></h4>
 							<ol>
 								<li><p>Save inferred sentiment dataset to a local directory for analysis/visualization</p></li>
@@ -390,14 +390,14 @@
 								<li><p>Same as <a href='#part1_extract'>Part 1 Pipeline - Extract</a> but with <em>both</em> datasets described in <a href='#data'>Data</a> (which will be merged into one)</p></li>
 							</ul>
 						</div>
-						<div class="block m-3 pt-3 wow fadeInLeft" data-wow-delay="900ms" data-wow-duration="500ms">
+						<div class="block m-3 pt-3 wow fadeInLeft" data-wow-delay="800ms" data-wow-duration="500ms">
 							<h4 id="part3-transform">Transform<a name="part3_transform"></a></h4>
 							<ul>
 								<li><p>Same as <a href='#part1_transform'>Part 1 Pipeline - Transform</a> with combined dataset</p></li>
 								<li><p>Group dataset by time to be used in a time-series predictive model</p></li>
 							</ul>
 						</div>
-						<div class="block m-3 pt-3 wow fadeInLeft" data-wow-delay="1100ms" data-wow-duration="500ms">
+						<div class="block m-3 pt-3 wow fadeInLeft" data-wow-delay="900ms" data-wow-duration="500ms">
 							<h5 id="part3-model">Model<a name="part3_model"></a></h5>
 							<ol start='' >
 								<li><p>Build highest performing model on the combined dataset just as in <a href='#part1_model'>Part 1 Pipeline - (Model)</a>. But this time using a model optimized for a time-series:</p>
@@ -415,7 +415,7 @@
 								</li>
 							</ol>
 						</div>
-						<div class="block m-3 pt-3 wow fadeInLeft" data-wow-delay="1300ms" data-wow-duration="500ms">
+						<div class="block m-3 pt-3 wow fadeInLeft" data-wow-delay="1000ms" data-wow-duration="500ms">
 							<h4 id="part3-load">Load<a name="part3_load"></a></h4>
 							<ul>
 								<li><p>Same as <a href='#part1_load'>Part 1 Pipeline - Load</a> with combined dataset</p></li>
@@ -441,120 +441,122 @@
 						</figure>
 					</div>
 				</div>
-				<div class="row wow fadeInLeft" data-wow-delay="500ms" data-wow-duration="500ms">
+				<div class="row wow fadeInLeft mb-4" data-wow-delay="500ms" data-wow-duration="500ms">
 					<div class="col-lg-6">
 						<h2 id="viz-prototypes">Prototypes</h2>
 						<p><em>Note: The actual values are not finalized, the modeling process is still under construction</em></p>
 					</div>
 				</div>
-
+				
 				<!-- Bar Charts -->
-				<div class="row wow fadeInLeft" data-wow-delay="500ms" data-wow-duration="500ms">
-					<div class="col-lg-6">
-						<div class="wow fadeInLeft" data-wow-delay="700ms" data-wow-duration="500ms">
-							<h3 id="bar-chart-protos">Bar Charts <a name="design_bar"></a></h3>
-							<h4 class="subtitle-des">Indicating sentiment around words, hashtags, and usernames</h4>
-							<figure>
-								<img class="fit-window center-block" src="../assets/images/final/russia_sentiment.png" referrerpolicy="no-referrer" alt="russia_sentiment">
-								<figcaption>Sentiment of the keyword <code>russia</code> on SlavaUkraine dataset</figcaption>
-							</figure>
-							<figure>
-								<img class="fit-window center-block" src="../assets/images/final/most_common_hashtags.png" referrerpolicy="no-referrer" alt="slava_top_10_hashtags">
-								<figcaption>Sentiment of the top 10 most frequent hashtags on <code>SlavaUkraine</code> dataset</figcaption>
-							</figure>
-						</div>
+				<div class="row m-3 pt-5 with-btm-border">
+					<div class="wow fadeInUp center-block" data-wow-delay="500ms" data-wow-duration="500ms">
+						<h3 id="bar-chart-protos">Bar Charts <a name="design_bar"></a></h3>
+						<h4 class="subtitle-des">Indicating sentiment around words, hashtags, and usernames</h4>
+					</div>
+					<div class="wow fadeInUp center-block" data-wow-delay="700ms" data-wow-duration="500ms">
+						<figure class="center-block">
+							<img class="fit-window center-block" src="../assets/images/final/russia_sentiment.png" referrerpolicy="no-referrer" alt="russia_sentiment">
+							<figcaption>Sentiment of the keyword <code>russia</code> on SlavaUkraine dataset</figcaption>
+						</figure>
+						<figure class="center-block">
+							<img class="fit-window center-block" src="../assets/images/final/most_common_hashtags.png" referrerpolicy="no-referrer" alt="slava_top_10_hashtags">
+							<figcaption>Sentiment of the top 10 most frequent hashtags on <code>SlavaUkraine</code> dataset</figcaption>
+						</figure>
+					</div>
+				</div>
+				
+				<!-- Pie Charts-->
+				<div class="row m-3 pt-5 with-btm-border">
+					<div class="wow fadeInRight center-block" data-wow-delay="600ms" data-wow-duration="500ms">
+						<h3 id="pie-chart-protos">Pie Charts<a name="design_pie"></a></h3>
+						<h4 class="subtitle-des">Indicating the proportions of sentiment within subsects of the data</h4>
+					</div>
+					<div class="wow fadeInRight center-block" data-wow-delay="800ms" data-wow-duration="500ms">
+						<figure class="center-block">
+							<img class="fit-window center-block" src="../assets/images/final/word_sentiment_distrib.png" referrerpolicy="no-referrer" alt="sentiment_distribution_words">
+							<figcaption>Distribution of sentiment for all words in the <code>SlavaUkraine</code> dataset</figcaption>
+						</figure>
+						<figure class="center-block">
+							<img class="fit-window center-block" src="../assets/images/final/tweet_sentiment_distrib.png" referrerpolicy="no-referrer" alt="sentiment_distribution_tweets">
+							<figcaption>Distribution of sentiment for all tweets in the <code>SlavaUkraine</code> dataset</figcaption>
+						</figure>
 					</div>
 				</div>
 
-				<!-- Pie Charts-->
-				<div class="row wow fadeInLeft pt-5 with-btm-border" data-wow-delay="500ms" data-wow-duration="500ms">
-					<div class="col-lg-6">
-						<div class="wow fadeInLeft" data-wow-delay="800ms" data-wow-duration="500ms">
-							<h3 id="pie-chart-protos">Pie Charts<a name="design_pie"></a></h3>
-							<h4 class="subtitle-des">Indicating the proportions of sentiment within subsects of the data</h4>
-							<figure>
-								<img class="fit-window center-block" src="../assets/images/final/word_sentiment_distrib.png" referrerpolicy="no-referrer" alt="sentiment_distribution_words">
-								<figcaption>Distribution of sentiment for all words in the <code>SlavaUkraine</code> dataset</figcaption>
-							</figure>
-							<figure>
-								<img class="fit-window center-block" src="../assets/images/final/tweet_sentiment_distrib.png" referrerpolicy="no-referrer" alt="sentiment_distribution_tweets">
-								<figcaption>Distribution of sentiment for all tweets in the <code>SlavaUkraine</code> dataset</figcaption>
-							</figure>
-						</div>
+				<!-- Confusion Matricies-->
+				<div class="row m-3 pt-5 with-btm-border">
+					<div class="wow fadeInLeft center-block" data-wow-delay="1200ms" data-wow-duration="500ms">
+						<figure class="center-block">
+							<img class="fit-window center-block" src="../assets/images/final/linearSVC_confusion_matrix.png" referrerpolicy="no-referrer" alt="linearSVC_confusion_matrix">
+							<figcaption>Evaluation of a LinearSVC on the <code>SlavaUkraine</code> dataset</figcaption>
+						</figure>
 					</div>
-				</div>
-						
-				<!-- Line Charts-->
-				<div class="row wow fadeInLeft pt-5 with-btm-border" data-wow-delay="500ms" data-wow-duration="500ms">
-					<div class="col-lg-6">
-						<div class="wow fadeInLeft" data-wow-delay="900ms" data-wow-duration="500ms">
-							<h3 id="line-chart-protos">Line Charts<a name="design_line"></a></h3>
-							<h4 class="subtitle-des">Illustrating trends in the data and model <u>over time</u></h4>
-							<ul>
-								<li><p>- 3-variable (negative, neutral, positive) chart to show sentiment of tweets over time</p></li>
-								<li><p>- Performance of model through epochs when testing</p></li>
-							</ul>
-							<p><em>In Progress</em></p>
-						</div>
+					<div class="wow fadeInLeft center-block" data-wow-delay="800ms" data-wow-duration="500ms">
+						<h3 id="conf-matrix-protos">Confusion Matrix (Modified Heat Map)</h3>
+						<h4 class="subtitle-des">Displays performance/accuracy of a model</h4>
 					</div>
 				</div>
 
 				<!-- Word Clouds-->
-				<div class="row wow fadeInLeft pt-5 with-btm-border" data-wow-delay="500ms" data-wow-duration="500ms">
-					<div class="col-lg-6">
-						<div class="wow fadeInLeft" data-wow-delay="1000ms" data-wow-duration="500ms">
-							<h3 id="word-cloud-protos">Word Clouds<a name="design_cloud"></a></h3>
-							<h4 class="subtitle-des">Display the most common words given a keyword or dataset feature</h4>
-							<figure>
-								<img class="fit-window center-block" src="../assets/images/final/positive_sentiment_words.png" referrerpolicy="no-referrer" alt="all_words_cloud">
-								<figcaption>All positive words in <code>SlavaUkraine</code> dataset</figcaption>
-							</figure>
-							<figure>
-								<img class="fit-window center-block" src="../assets/images/final/negative_sentiment_words.png" referrerpolicy="no-referrer" alt="positive_words_cloud">
-								<figcaption>All negative words in <code>SlavaUkraine</code> dataset</figcaption>
-							</figure>
-						</div>
+				<div class="row m-3 pt-5 with-btm-border">
+					<div class="wow fadeInRight center-block" data-wow-delay="700ms" data-wow-duration="500ms">
+						<h3 id="word-cloud-protos">Word Clouds<a name="design_cloud"></a></h3>
+						<h4 class="subtitle-des">Display the most common words given a keyword or dataset feature</h4>
+					</div>
+					<div class="wow fadeInRight center-block" data-wow-delay="1000ms" data-wow-duration="500ms">
+						<figure class="center-block">
+							<img class="fit-window center-block" src="../assets/images/final/positive_sentiment_words.png" referrerpolicy="no-referrer" alt="all_words_cloud">
+							<figcaption>All positive words in <code>SlavaUkraine</code> dataset</figcaption>
+						</figure>
+						<figure class="center-block">
+							<img class="fit-window center-block" src="../assets/images/final/negative_sentiment_words.png" referrerpolicy="no-referrer" alt="positive_words_cloud">
+							<figcaption>All negative words in <code>SlavaUkraine</code> dataset</figcaption>
+						</figure>
 					</div>
 				</div>
-						
-				<!-- Confusion Matricies-->
-				<div class="row wow fadeInLeft pt-5 with-btm-border" data-wow-delay="500ms" data-wow-duration="500ms">
-					<div class="col-lg-6">
-						<div class="block wow fadeInLeft" data-wow-delay="1100ms" data-wow-duration="500ms">
-							<h3 id="conf-matrix-protos">Confusion Matrix (Modified Heat Map)</h3>
-							<h4 class="subtitle-des">Displays performance/accuracy of a model</h4>
-							<figure>
-								<img class="fit-window center-block" src="../assets/images/final/linearSVC_confusion_matrix.png" referrerpolicy="no-referrer" alt="linearSVC_confusion_matrix">
-								<figcaption>Evaluation of a LinearSVC on the <code>SlavaUkraine</code> dataset</figcaption>
-							</figure>
-						</div>
-					</div>
-				</div>
-						
-				<!-- Scatterplot Matricies -->
-				<div class="row wow fadeInLeft pt-5 with-btm-border" data-wow-delay="500ms" data-wow-duration="500ms">
-					<div class="col-lg-6">
-						<div class="block wow fadeInLeft" data-wow-delay="1200ms" data-wow-duration="500ms">
-							<h3 id="scatter-matrix-protos">Scatterplot Matrix<a name="design_matrix"></a></h3>
-							<h4 class="subtitle-des">Visualize impact of dimensions through PCA</h4>
-							<p><em>In Progress</em></p>
-						</div>
-					</div>
-				</div>
-						
+
 				<!-- Diverging Bar Charts -->
-				<div class="row wow fadeInLeft pt-5 with-btm-border" data-wow-delay="500ms" data-wow-duration="500ms">
-					<div class="col-lg-6">
-						<div class="block wow fadeInLeft" data-wow-delay="1300ms" data-wow-duration="500ms">
-							<h3 id="div-bar-protos">Diverging Bar Charts<a name="design_diverging"></a></h3>
-							<h4 class="subtitle-des">Show most common features/words and their coefficient values (indicators of the relationship between a value and the predicted output)</h4>
-							<figure>
-								<img class="fit-window center-block" src="../assets/images/final/linearSVC_coefficients.png" referrerpolicy="no-referrer" alt="linearSVC_coefficients">
-								<figcaption>LinearSVC coefficients of top 20 words in <code>SlavaUkraine</code> dataset</figcaption>
-							</figure>
-						</div>
+				<div class="row m-3 pt-5 with-btm-border">
+					<div class="wow fadeInUp center-block" data-wow-delay="1000ms" data-wow-duration="500ms">
+						<h3 id="div-bar-protos">Diverging Bar Charts<a name="design_diverging"></a></h3>
+						<h4 class="subtitle-des">Show most common features/words and their coefficient values (indicators of the relationship between a value and the predicted output)</h4>
+					</div>
+					<div class="wow fadeInUp center-block" data-wow-delay="1400ms" data-wow-duration="500ms">
+						<figure class="center-block">
+							<img class="fit-window center-block" src="../assets/images/final/linearSVC_coefficients.png" referrerpolicy="no-referrer" alt="linearSVC_coefficients">
+							<figcaption>LinearSVC coefficients of top 20 words in <code>SlavaUkraine</code> dataset</figcaption>
+						</figure>
 					</div>
 				</div>
+				
+				<!-- Line Charts-->
+				<div class="row m-3 pt-5 with-btm-border">
+					<div class="col-lg-8 center-block">
+					<div class="wow fadeInLeft center-align" data-wow-delay="700ms" data-wow-duration="500ms">
+						<h3 id="line-chart-protos">Line Charts<a name="design_line"></a></h3>
+						<h4 class="subtitle-des">Illustrating trends in the data and model <u>over time</u></h4>
+					</div>
+					<div class="block wow fadeInLeft center-block" data-wow-delay="900ms" data-wow-duration="500ms">
+						<ul>
+							<li><p>- 3-variable (negative, neutral, positive) chart to show sentiment of tweets over time</p></li>
+							<li><p>- Performance of model through epochs when training/testing</p></li>
+						</ul>
+						<p><em>In Progress</em></p>
+					</div>
+				</div>
+				</div>
+				
+				<!-- Scatterplot Matricies -->
+				<div class="row m-3 pt-5">
+					<div class="wow fadeInLeft center-block" data-wow-delay="900ms" data-wow-duration="500ms">
+						<h3 id="scatter-matrix-protos">Scatterplot Matrix<a name="design_matrix"></a></h3>
+						<h4 class="subtitle-des">Visualize impact of dimensions through PCA</h4>
+						<p><em>In Progress</em></p>
+					</div>
+				</div>
+				
+				
 			</div>
 		</section>
 		
@@ -565,23 +567,23 @@
 				<div class="section-heading">
 					<h1 class="wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">Must-Have Features<a name="must_have"></a></h1>
 				</div>
-				<div class="row">
+				<div class="row wow fadeInLeft" data-wow-delay=".5s" data-wow-duration="500ms">
 					<div class="col-lg-6">
 						<div class="block">
-							<ul start='' >
+							<ul>
 								<li><p>Sentiment visualization of the <code>SlavaUkraine</code> dataset</p>
-									<ul start='' >
+									<ul class="pb-3">
 										<li><p><a href='#design_pie'>Pie Charts</a></p></li>
 										<li><p><a href='#design_bar'>Bar Charts</a></p></li>
 									</ul>
 								</li>
 								<li><p>Show most common hashtags &amp; usernames with their associated sentiment</p>
-									<ul start='' >
+									<ul class="pb-3">
 										<li><p><a href='#design_bar'>Bar Charts</a></p></li>
 									</ul>
 								</li>
 								<li><p>Figure showing the sentiment of the more general dataset based on inferences from the <code>SlavaUkraine</code> model</p>
-									<ul start='' >
+									<ul>
 										<li><p><a href='#design_pie'>Pie Charts</a></p></li>
 										<li><p><a href='#design_bar'>Bar Charts</a></p></li>
 									</ul>
@@ -600,22 +602,22 @@
 				<div class="section-heading">
 					<h1 class="wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">Optional Features<a name="optionals"></a></h1>
 				</div>
-				<div class="row">
+				<div class="row wow fadeInLeft" data-wow-delay=".5s" data-wow-duration="500ms">
 					<div class="col-lg-6">
 						<div class="block">
-							<ul start='' >
+							<ul>
 								<li><p>Word cloud to show frequency of words</p>
-									<ul start='' >
+									<ul class="pb-3">
 										<li><p><a href='#design_cloud'>Word Cloud</a></p></li>
 									</ul>
 								</li>
 								<li><p>Coefficient plots to show the significant variables in the model</p>
-									<ul start='' >
+									<ul class="pb-3">
 										<li><p><a href='#design_diverging'>Diverging Bar Chart</a></p></li>	
 									</ul>
 								</li>
 								<li><p>Performance of model in prediction and training</p>
-									<ul start='' >
+									<ul>
 										<li><p><a href='#design_confusion'>Confusion Matrix/Heat Map</a></p></li>
 										<li><p><a href='#design_line'>Line Chart</a></p></li>
 									</ul>
@@ -634,7 +636,7 @@
 				<div class="section-heading">
 					<h1 class="wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">Goal Features<a name="goals"></a></h1>
 				</div>
-				<div class="row">
+				<div class="row wow fadeInLeft" data-wow-delay=".5s" data-wow-duration="500ms">
 					<div class="col-lg-6">
 						<div class="block">
 							<ul>
@@ -653,8 +655,8 @@
 				<div class="section-heading">
 					<h1 class="wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">Project Schedule<a name="schedule"></a></h1>
 				</div>
-				<div class="row">
-					<div class="col-lg-6">
+				<div class="row wow fadeInLeft" data-wow-delay=".5s" data-wow-duration="500ms">
+					<div class="col-lg-6 center-align">
 						<figure>
 							<table>
 								<thead>
@@ -667,7 +669,7 @@
 										<td>3/9</td><td>- Conducted research<br>- Selected data &amp; framed problem<br>- Implemented initial round of data processing</td>
 									</tr>
 									<tr>
-										<td><strong>3/11</strong></td><td>Project Proposal &amp; Proposal Feedback</td>
+										<td><strong>3/11</strong></td><td><strong>Project Proposal &amp; Proposal Feedback</strong></td>
 									</tr>
 									<tr>
 										<td>3/16</td><td>- Incorporate user input for determining cluster sentiment into pipeline...</td>
@@ -676,37 +678,37 @@
 										<td>3/21</td><td>- Link pipeline to live data (ie. pull directly from Kaggle)<br>- Debug <a href='#part1_pipeline'>Part 1</a> &amp; <a href='#part2_pipeline'>Part 2</a> pipelines</td>
 									</tr>
 									<tr>
-										<td><strong>3/23</strong></td><td>Revised Proposal, Related Work, and Website</td>
+										<td><strong>3/23</strong></td><td><strong>Revised Proposal, Related Work, and Website</strong></td>
 									</tr>
 									<tr>
 										<td>3/30</td><td>- Implement <a href='#part3_pipeline'>Part 3</a> pipeline<br>- Begin building Part 1 visualizations in D3.js<br>- Build template for final presentation platform</td>
 									</tr>
 									<tr>
-										<td><strong>4/6</strong></td><td>Alpha Release</td>
+										<td><strong>4/6</strong></td><td><strong>Alpha Release</strong></td>
 									</tr>
 									<tr>
 										<td>4/13</td><td>- Complete Part 1 &amp; Part 2 vizualizations in D3.js<br>- Intgrate completed vizualizations into the final presentation template<br>- Build time-based analysis into <a href='#part3_pipeline'>Part 3</a> pipeline<br>- Mock Part 3 visualizations in Python</td>
 									</tr>
 									<tr>
-										<td><strong>4/20</strong></td><td>Beta Release</td>
+										<td><strong>4/20</strong></td><td><strong>Beta Release</strong></td>
 									</tr>
 									<tr>
 										<td>4/25</td><td>- Incorporate any additional features into vizualizations (tooltips, interactivity, etc.)<br>- Build Part 3 visualizations in D3.js<br>- Integrate Part 3 visualizations into the final presentation<br>- Write script for presentation/demo video</td>
 									</tr>
 									<tr>
-										<td><strong>5/9</strong></td><td>Final Project Presentations</td>
+										<td><strong>5/9</strong></td><td><strong>Final Project Presentations</strong></td>
 									</tr>
 									<tr>
 										<td>5/11</td><td>- Outline project report</td>
 									</tr>
 									<tr>
-										<td><strong>5/16</strong></td><td>Project Report Draft</td>
+										<td><strong>5/16</strong></td><td><strong>Project Report Draft</strong></td>
 									</tr>
 									<tr>
 										<td>5/18</td><td>- Finalize project report<br>- Clean up and package materials</td>
 									</tr>
 									<tr>
-										<td><strong>5/19</strong></td><td>All Project Content</td>
+										<td><strong>5/19</strong></td><td><strong>All Project Content</strong></td>
 									</tr>
 									<tr>
 										<td>*<strong>bold</strong> indicates course deadline</td><td>&nbsp;</td>
