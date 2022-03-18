@@ -1,0 +1,778 @@
+<!doctype html>
+<html>
+<head>
+	<!-- Basic Page Needs
+	-->
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="icon" href="favicon.ico">
+	<title>Final Project Proposal</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<!-- Mobile Specific Metas -->
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
+	<!-- CSS Files  -->
+	<!-- Twitter Bootstrs CSS -->
+	<link rel="stylesheet" href="../assets/plugins/bootstrap/bootstrap.min.css">
+	<!-- Ionicons Fonts Css -->
+	<link rel="stylesheet" href="../assets/plugins/ionicons/ionicons.min.css">
+	<!-- animate css -->
+	<link rel="stylesheet" href="../assets/plugins/animate-css/animate.css">
+	<!-- Hero area slider css-->
+	<link rel="stylesheet" href="../assets/plugins/slider/slider.css">
+	<!-- slick slider -->
+	<link rel="stylesheet" href="../assets/plugins/slick/slick.css">
+	<!-- Fancybox -->
+	<link rel="stylesheet" href="../assets/plugins/fancybox/jquery.fancybox.css">
+	<!-- hover -->
+	<link rel="stylesheet" href="../assets/plugins/hover/hover-min.css">
+	<!-- template main css file -->
+	<link rel="stylesheet" href="../style/css/style.css">
+</head>
+<body>
+	
+	<!-- Navbar -->
+	
+	<section class="top-bar animated-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<nav class="navbar navbar-expand-lg navbar-light bg-light">
+						<a class="navbar-brand" href="https://www.cs.usfca.edu/~apjoshi/cs360/index.html">
+							<img src="../assets/images/usf_cs.png" alt="USF CS Department">
+						</a>
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Home
+								<span class="sr-only">(current)</span>
+							</a>
+						</li>
+						
+					</nav>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Header -->
+	
+	<section class="global-page-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="block">
+						<h1>CS 360 - Final Project Proposal</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
+	<section id="blog-full-width">
+		
+		<!-- Basic Information -->
+		
+		<section id="feature">
+			<div class="container">
+				<div class="section-heading">
+					<h1 class="wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">Basic Information</h1>
+				</div>
+				<div class="block wow fadeInLeft" data-wow-delay=".5s" data-wow-duration="600ms">
+					<form>
+						<div class="row">
+							<p for="staticTitle" class="subtitle">Title</p>
+							<div class="col-sm-10">
+								<h5 id="staticTitle"><u>Twitter Sentiment Analysis: Ukraine &amp; Russia</u></h5>
+							</div>
+						</div>
+						<div class="row">
+							<p for="staticAuthor" class="subtitle">Author</p>
+							<div class="col-sm-10">
+								<h5 id="staticAuthor">Peter Gish</h5>
+							</div>
+						</div>
+						<div class="row">
+							<p for="staticEmail" class="subtitle">Email</p>
+							<div class="col-sm-10">
+								<h5 id="staticEmail"><a href="mailto:pcgish@usfca.edu" target='_blank' class='url'>pcgish@usfca.edu</a></h5>
+							</div>
+						</div>
+						<div class="row">
+							<p for="staticGithub" class="subtitle">Code</p>
+							<div class="col-sm-10">
+								<h5 id="staticGithub"><a href='https://github.com/peterg7/Russia_Ukraine_Twitter_Sentiment_Analysis' target='_blank' class='url'>github.com - Russia_Ukraine_Twitter_Sentiment_Analysis</a></h5>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+		
+		<!-- Background & Motivation -->
+		
+		<section id="feature">
+			<div class="container">
+				<div class="section-heading">
+					<h1 class="wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">Background &amp; Motivation</h1>
+				</div>
+				<div class="block wow fadeInLeft" data-wow-delay=".5s" data-wow-duration="600ms">
+					<p>I believe that analyzing current, real-time data allows for especially meaningful insights due to their relevancy. 
+						It also can lead to predictions or estimations that are highly accurate because of the temporal proximity. 
+						A large part of data science is finding trends within data that are impossible for humans to detect due to scale or complexity. 
+						For these reasons, one of the most pressing current events is the war between Russia and Ukraine which, in today&#39;s data-filled world, 
+						is producing mass information, most of which is open to the public but it&#39;s overwhelmingly vast. One such medium for this data is Twitter, 
+						the social media platform where people make short textual posts for their followers to see. By analyzing tweets, spefically ones related to Russia and Ukraine, 
+						certain trends can be detected regarding the <em>way</em> people are writing about the war.
+						From a more general standpoint, I also enjoy manipulating, analyzing, and leveraging data to extract insights about a topic. 
+						There is incredible power behind the current analysis methods with one being natural language processing. 
+						This is a technology that I am interested in and found this topic perfect for acquiring experience.
+					</p>
+				</div>
+			</div>
+		</section>
+		
+		
+		<section id="feature">
+			<div class="container">
+				<div class="section-heading">
+					<h1 class="wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">Project Objectives <a name="objectives"></a></h1>
+				</div>
+				<div class="row wow fadeInLeft with-btm-border" data-wow-delay="500ms" data-wow-duration="600ms">
+					<div class="column-lg-6">
+						<h3 id='part-1'>Part 1</h3>
+						<ol start='' >
+							<li><p>What is the estimated, <em>current</em> sentiment of (presumably Ukranian patriot) &quot;tweeters&quot; when posting about the Ukraine, President Zelensky, and as an extension, the war with Russia (as identified using the #SlavaUkraini hashtag)?</p></li>
+							<li><p>When looking at various features of Twitter, what evidence supports or rejects the above estimated sentiment (ie. usernames, hashtags, retweets, keywords,...)</p></li>
+						</ol>
+					</div>
+				</div>
+				<div class="row wow fadeInLeft with-btm-border" data-wow-delay="800ms" data-wow-duration="600ms">
+					<div class="column-lg-6">
+						<h3 id='part-2'>Part 2</h3>
+						<ol start='' >
+							<li><p>What is the inferred sentiment and accuracy when applying a predictive model trained on the #SlavaUkraini data to a more general dataset of tweets which involve Russia and/or Ukraine?</p></li>
+							<li><p><em>(How have tweets changed over time?)</p></em></li>
+						</ol>
+					</div>
+				</div>
+				<div class="row wow fadeInLeft" data-wow-delay="1100ms" data-wow-duration="600ms">
+					<div class="column-lg-6">
+						<h3 id='part-3'>Part 3</h3>
+						<ol start='' >
+							<li><p>Adding the broader dataset to the training set of the predictive model, what is the <em>predicted</em> sentiment of tweets regarding Russia and/or Ukraine at time <em>t</em> from the present date?</p>
+								<ul>
+									<li><p><em>(What will the sentiment look like in the future?)</p></em></li>
+								</ul>
+							</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- Data -->
+		
+		<section id="feature">
+			<div class="container">
+				<div class="section-heading">
+					<h1 class="wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">Data <a name="data"></a></h1>
+				</div>
+				<div class="row">
+					<div class="column-lg-6">
+						<form>
+							<div class="row wow fadeInLeft" data-wow-delay="500ms" data-wow-duration="600ms">
+								<p for="staticSlava" class="subtitle">Slava Ukraini Tweets</p>
+								<div class="col-md-4">
+									<h5 id="staticSlava"><a href='https://www.kaggle.com/gpreda/slava-ukraini-tweets'>kaggle.com</a></h5>
+								</div>
+							</div>
+							<div class="row wow fadeInLeft" data-wow-delay="800ms" data-wow-duration="600ms">
+								<p for="staticDaily" class="subtitle">Russia vs Ukraine Tweets (Daily Updated)</p>
+								<div class="col-md-2">
+									<h5 id="staticDaily"><a href='https://www.kaggle.com/towhidultonmoy/russia-vs-ukraine-tweets-datasetdaily-updated'>kaggle.com</a></h5>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- Technologies -->
+		
+		<section id="feature">
+			<div class="container">
+				<div class="section-heading wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">
+					<h1>Technologies <a name="data"></a></h1>
+					<p>The project will utilize Python 3 for data processing (see <a href='#processing'>below</a>) 
+						and JavaScript for visualizations. The following packages and libraries will be implemented:
+					</p>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-lg-6">
+						<div id='processing' class="media wow fadeInDown animated" data-wow-duration="600ms" data-wow-delay="400ms">
+							<div class="media-left">
+								<div class="icon">
+									<i class="ion-wrench"></i>
+								</div>
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">General Data Processing</h4>
+								<p><a href='https://www.python.org/'>Python</a>==3.10.2</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-lg-6">
+						<div id='manipulation' class="media wow fadeInDown animated" data-wow-duration="600ms" data-wow-delay="400ms">
+							<div class="media-left">
+								<div class="icon">
+									<i class="ion-wrench"></i>
+								</div>
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">Data Manipulation</h4>
+								<ul>
+									<li><p><a href='https://pandas.pydata.org/'>Pandas</a>==1.4.1</p></li>
+									<li><p><a href='https://numpy.org/'>NumPy</a>==1.22.3</p></li>
+									<li><p><a href='https://scikit-learn.org/stable/'>scikit-learn</a>==1.0.2</p></li>
+									<li><p><a href='https://tensorflow.org/'>TensorFlow</a>==2.7.0</p></li>
+									<li><p><a href='https://radimrehurek.com/gensim/'>Genism</a>==4.1.2</p></li>
+									<li><p><a href='https://www.nltk.org/'>nltk</a>==3.6.7</p></li>
+									<li><p><a href='https://joblib.readthedocs.io/en/latest/'>Joblib</a>==1.1.0</p></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-lg-6">
+						<div id='inter-visuals' class="media wow fadeInDown animated" data-wow-duration="600ms" data-wow-delay="800ms">
+							<div class="media-left">
+								<div class="icon">
+									<i class="ion-wrench"></i>
+								</div>
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">Intermediary Visualizations</h4>
+								<ul>
+									<li><p><a href='https://matplotlib.org/'>Matplotlib</a>==3.5.1</p></li>
+									<li><p><a href='https://seaborn.pydata.org/'>Seaborn</a>==0.11.2</p></li>
+									<li><p><a href='https://amueller.github.io/word_cloud/'>Wordcloud</a>==1.8.1</p></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-lg-6">
+						<div id='final-visuals' class="media wow fadeInDown animated" data-wow-duration="600ms" data-wow-delay="800ms">
+							<div class="media-left">
+								<div class="icon">
+									<i class="ion-wrench"></i>
+								</div>
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">Intermediary Visualizations</h4>
+								<ul>
+									<li><p><a href='https://d3js.org/'>D3.js</a></p></li>
+									<li><p>Various D3 plugins (TBD)</p></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- Data Processing-->
+		
+		<section id="feature">
+			<div class="container">
+				<div class="section-heading wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">
+					<h1>Data Processing <a name="processing"></a></h1>
+					<p>Data processing will be the majority component of the project. The data will be imported directly from Kaggle as a
+						live link in order to always pull the most recent dataset and avoid the process of storing and referencing it locally. 
+						There will be 3 ETL pipelines to address each "Part" as described in the <a href='#objectives'>Project Objectives</a>. 
+						These are outlined below
+					</p>
+				</div>
+				<div class="row wow fadeInLeft with-btm-border" data-wow-delay="300ms" data-wow-duration="500ms">
+					<div class="col-lg-6 wow fadeInLeft" data-wow-delay="500ms" data-wow-duration="500ms">
+						<h2 id="part1-pipeline">Part 1 Pipeline<a name="part1_pipeline"></a></h2>
+						<div class="block m-3 pt-3 wow fadeInLeft" data-wow-delay="700ms" data-wow-duration="500ms">
+							<h4 id="part1-extract">Extract<a name="part1_extract"></a></h4>
+							<ol start='' >
+								<li><p>Import data into Pandas from Kaggle</p>
+								</li>
+								<li><p>Select relevant features (date, user_name, retweets, text, hashtags)</p>
+								</li>
+								<li><p>Clean text data (tweet text &amp; hashtags)</p>
+									<ol start='' >
+										<li><p>Remove punctuation and non alpha-numeric characters</p></li>
+										<li><p>Lowercase all characters</p></li>
+										<li><p>Split words on spaces</p></li>
+										<li><p>Lemmatize words based on verbs</p></li>	
+									</ol>
+								</li>
+								<li><p>Convert dates to <code>datetime</code> for use in comparisons and other mathematical operations</p>
+								</li>
+								<li><p>Filter tweets to only include set of keywords (&quot;ukraine&quot;, &quot;russia&quot;, &quot;zelensky&quot;)</p>
+								</li>
+							</ol>
+						</div>
+						<div class="block m-3 pt-3 wow fadeInLeft" data-wow-delay="900ms" data-wow-duration="500ms">
+							<h4 id="part1-transform">Transform<a name="part1_transform"></a></h4>
+							<ol start='' >
+								<li><p>Collect bigrams from tweet text</p></li>
+								<li><p>Build a vector model trained on the bigrams</p></li>
+								<li><p>Use a clustering algorithm (<a href='https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html'>KMeans</a>) to build 3 clusters from the vector model</p></li>
+								<li><p>Map the clusters to be defined as neutral, positive, and negative (with user input)</p></li>
+								<li><p>Reshape data into Pandas</p></li>
+								<li><p>Determine sentiment of every word from the clusters</p></li>
+								<li><p>Store sentiment of every tweet extracted from clusters</p></li>
+							</ol>
+						</div>
+						<div class="block m-3 pt-3 wow fadeInLeft" data-wow-delay="1100ms" data-wow-duration="500ms">
+							<h5 id="part1-model">Model<a name="part1_model"></a></h5>
+							<ol start='' >
+								<li><p>Build training and testing datasets from the sentiment dataframe built above</p></li>
+								<li><p>Transform new dataset text into vectors</p></li>
+								<li><p>Fit a <a href='https://scikit-learn.org/stable/modules/generated/sklearn.svm.LinearSVC.html'>LinearSVC</a> (linear support vector classification) with the training data</p></li>
+								<li><p>Test performance of the SVC using the test data</p></li>
+								<li><p>Fit a <a href='https://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.MultinomialNB.html'>MultinomialNB</a> (multinomial naive bayes) with the training data for performance comparison with the LinearSVC</p></li>
+								<li><p>Test performance of the NB using the test data</p></li>
+								<li><p>Compare performance of the SVC and NB</p></li>
+								<li><p>Export the &quot;higher performing&quot; algorithm to be used in Part 2</p></li>
+							</ol>
+						</div>
+						<div class="block m-3 pt-3 wow fadeInLeft" data-wow-delay="1300ms" data-wow-duration="500ms">
+							<h4 id="part1-load">Load<a name="part1_load"></a></h4>
+							<ol start='' >
+								<li><p>Save datasets &amp; embeddings along pipeline to local directory</p></li>
+								<li><p>Final sentiment dataframe exported to local directory for analysis/visualizations</p></li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				<div class="row pt-5 wow fadeInLeft with-btm-border" data-wow-delay="300ms" data-wow-duration="500ms">
+					<div class="col-lg-6 wow fadeInLeft" data-wow-delay="500ms" data-wow-duration="500ms">
+						<h2 id="part2-pipeline">Part 2 Pipeline<a name="part2_pipeline"></a></h2>
+						<div class="block m-3 pt-3 wow fadeInLeft" data-wow-delay="700ms" data-wow-duration="500ms">
+							<h4 id="part2-extract">Extract<a name="part2_extract"></a></h4>
+							<ul>
+								<li><p>- Same as <a href='#part1_extract'>Part 1 Pipeline - Extract</a> with the generalized dataset described in <a href='#data'>Data</a></p></li>
+							</ul>
+						</div>
+						<div class="block m-3 pt-3 wow fadeInLeft" data-wow-delay="900ms" data-wow-duration="500ms">
+							<h4 id="part2-transform">Transform<a name="part2_transform"></a></h4>
+							<ol start='' >
+								<li><p>Import vector model created in <a href='#part1_transform'>Part 1 Pipeline - Transform</a></p></li>
+								<li><p>Build vectors from recently extracted data using the imported vector model</p></li>
+								<li><p>Import the predictive model which was stored in <a href='#part1_model'>Part 1 Pipeline - (Model)</a></p></li>
+								<li><p>Make inferences using the model on the vectors built from the new dataset</p></li>
+								<li><p>Map model outputs to sentiment encodings and original tweets</p></li>
+							</ol>
+						</div>
+						<div class="block m-3 pt-3 wow fadeInLeft" data-wow-delay=1100ms data-wow-duration="500ms">
+							<h4 id="part2-load">Load<a name="part2_load"></a></h4>
+							<ol>
+								<li><p>Save inferred sentiment dataset to a local directory for analysis/visualization</p></li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				<div class="row pt-5 wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="500ms">
+					<div class="col-lg-6 wow fadeInLeft" data-wow-delay="500ms" data-wow-duration="500ms">
+						<h2 id="part3-pipeline">Part 3 Pipeline<a name="part3_pipeline"></a></h2>
+						<div class="block m-3 pt-3 wow fadeInLeft" data-wow-delay="700ms" data-wow-duration="500ms">
+							<h4 id="part3-extract">Extract<a name="part3_extract"></a></h4>
+							<ul>
+								<li><p>Same as <a href='#part1_extract'>Part 1 Pipeline - Extract</a> but with <em>both</em> datasets described in <a href='#data'>Data</a> (which will be merged into one)</p></li>
+							</ul>
+						</div>
+						<div class="block m-3 pt-3 wow fadeInLeft" data-wow-delay="900ms" data-wow-duration="500ms">
+							<h4 id="part3-transform">Transform<a name="part3_transform"></a></h4>
+							<ul>
+								<li><p>Same as <a href='#part1_transform'>Part 1 Pipeline - Transform</a> with combined dataset</p></li>
+								<li><p>Group dataset by time to be used in a time-series predictive model</p></li>
+							</ul>
+						</div>
+						<div class="block m-3 pt-3 wow fadeInLeft" data-wow-delay="1100ms" data-wow-duration="500ms">
+							<h5 id="part3-model">Model<a name="part3_model"></a></h5>
+							<ol start='' >
+								<li><p>Build highest performing model on the combined dataset just as in <a href='#part1_model'>Part 1 Pipeline - (Model)</a>. But this time using a model optimized for a time-series:</p>
+									<ol start='' >
+										<li><p><a href='https://www.tensorflow.org/api_docs/python/tf/estimator'>Linear Regression</a></p></li>
+										<li><p><a href='https://www.tensorflow.org/guide/keras/sequential_model'>Dense Sequential</a></p></li>
+										<li><p><a href='https://www.tensorflow.org/api_docs/python/tf/keras/layers/Conv2D'>CNN</a></p></li>
+										<li><p><a href='https://www.tensorflow.org/api_docs/python/tf/keras/layers/RNN'>RNN</a></p></li>
+										<li><p><a href='https://www.tensorflow.org/api_docs/python/tf/keras/layers/LSTM'>LSTM</a></p></li>
+									</ol>
+								</li>
+								<li><p>Use combined dataset (or even large one collected from another source), generate inferences using the selected model for some time <em>t</em> in the future</p>
+								</li>
+								<li><p>Export predictions to be used for analysis/visualizations</p>
+								</li>
+							</ol>
+						</div>
+						<div class="block m-3 pt-3 wow fadeInLeft" data-wow-delay="1300ms" data-wow-duration="500ms">
+							<h4 id="part3-load">Load<a name="part3_load"></a></h4>
+							<ul>
+								<li><p>Same as <a href='#part1_load'>Part 1 Pipeline - Load</a> with combined dataset</p></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- Visualization Design -->
+		
+		<section id="feature">
+			<div class="container">
+				<div class="section-heading">
+					<h1 class="wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">Visualization Design<a name="viz_design"></a></h1>
+				</div>
+				<div class="row wow fadeInLeft" data-wow-delay="500ms" data-wow-duration="500ms">
+					<div class="col-lg-6">
+						<h2 id="five-design-sheet">Five Design Sheet</h2>
+						<figure>
+							<img src="../assets/images/final/Five_Design_Sheet.png" alt="Five_Design_Sheet">
+						</figure>
+					</div>
+				</div>
+				<div class="row wow fadeInLeft" data-wow-delay="500ms" data-wow-duration="500ms">
+					<div class="col-lg-6">
+						<h2 id="viz-prototypes">Prototypes</h2>
+						<p><em>Note: The actual values are not finalized, the modeling process is still under construction</em></p>
+					</div>
+				</div>
+
+				<!-- Bar Charts -->
+				<div class="row wow fadeInLeft" data-wow-delay="500ms" data-wow-duration="500ms">
+					<div class="col-lg-6">
+						<div class="wow fadeInLeft" data-wow-delay="700ms" data-wow-duration="500ms">
+							<h3 id="bar-chart-protos">Bar Charts <a name="design_bar"></a></h3>
+							<h4 class="subtitle-des">Indicating sentiment around words, hashtags, and usernames</h4>
+							<figure>
+								<img class="fit-window center-block" src="../assets/images/final/russia_sentiment.png" referrerpolicy="no-referrer" alt="russia_sentiment">
+								<figcaption>Sentiment of the keyword <code>russia</code> on SlavaUkraine dataset</figcaption>
+							</figure>
+							<figure>
+								<img class="fit-window center-block" src="../assets/images/final/most_common_hashtags.png" referrerpolicy="no-referrer" alt="slava_top_10_hashtags">
+								<figcaption>Sentiment of the top 10 most frequent hashtags on <code>SlavaUkraine</code> dataset</figcaption>
+							</figure>
+						</div>
+					</div>
+				</div>
+
+				<!-- Pie Charts-->
+				<div class="row wow fadeInLeft pt-5 with-btm-border" data-wow-delay="500ms" data-wow-duration="500ms">
+					<div class="col-lg-6">
+						<div class="wow fadeInLeft" data-wow-delay="800ms" data-wow-duration="500ms">
+							<h3 id="pie-chart-protos">Pie Charts<a name="design_pie"></a></h3>
+							<h4 class="subtitle-des">Indicating the proportions of sentiment within subsects of the data</h4>
+							<figure>
+								<img class="fit-window center-block" src="../assets/images/final/word_sentiment_distrib.png" referrerpolicy="no-referrer" alt="sentiment_distribution_words">
+								<figcaption>Distribution of sentiment for all words in the <code>SlavaUkraine</code> dataset</figcaption>
+							</figure>
+							<figure>
+								<img class="fit-window center-block" src="../assets/images/final/tweet_sentiment_distrib.png" referrerpolicy="no-referrer" alt="sentiment_distribution_tweets">
+								<figcaption>Distribution of sentiment for all tweets in the <code>SlavaUkraine</code> dataset</figcaption>
+							</figure>
+						</div>
+					</div>
+				</div>
+						
+				<!-- Line Charts-->
+				<div class="row wow fadeInLeft pt-5 with-btm-border" data-wow-delay="500ms" data-wow-duration="500ms">
+					<div class="col-lg-6">
+						<div class="wow fadeInLeft" data-wow-delay="900ms" data-wow-duration="500ms">
+							<h3 id="line-chart-protos">Line Charts<a name="design_line"></a></h3>
+							<h4 class="subtitle-des">Illustrating trends in the data and model <u>over time</u></h4>
+							<ul>
+								<li><p>- 3-variable (negative, neutral, positive) chart to show sentiment of tweets over time</p></li>
+								<li><p>- Performance of model through epochs when testing</p></li>
+							</ul>
+							<p><em>In Progress</em></p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Word Clouds-->
+				<div class="row wow fadeInLeft pt-5 with-btm-border" data-wow-delay="500ms" data-wow-duration="500ms">
+					<div class="col-lg-6">
+						<div class="wow fadeInLeft" data-wow-delay="1000ms" data-wow-duration="500ms">
+							<h3 id="word-cloud-protos">Word Clouds<a name="design_cloud"></a></h3>
+							<h4 class="subtitle-des">Display the most common words given a keyword or dataset feature</h4>
+							<figure>
+								<img class="fit-window center-block" src="../assets/images/final/positive_sentiment_words.png" referrerpolicy="no-referrer" alt="all_words_cloud">
+								<figcaption>All positive words in <code>SlavaUkraine</code> dataset</figcaption>
+							</figure>
+							<figure>
+								<img class="fit-window center-block" src="../assets/images/final/negative_sentiment_words.png" referrerpolicy="no-referrer" alt="positive_words_cloud">
+								<figcaption>All negative words in <code>SlavaUkraine</code> dataset</figcaption>
+							</figure>
+						</div>
+					</div>
+				</div>
+						
+				<!-- Confusion Matricies-->
+				<div class="row wow fadeInLeft pt-5 with-btm-border" data-wow-delay="500ms" data-wow-duration="500ms">
+					<div class="col-lg-6">
+						<div class="block wow fadeInLeft" data-wow-delay="1100ms" data-wow-duration="500ms">
+							<h3 id="conf-matrix-protos">Confusion Matrix (Modified Heat Map)</h3>
+							<h4 class="subtitle-des">Displays performance/accuracy of a model</h4>
+							<figure>
+								<img class="fit-window center-block" src="../assets/images/final/linearSVC_confusion_matrix.png" referrerpolicy="no-referrer" alt="linearSVC_confusion_matrix">
+								<figcaption>Evaluation of a LinearSVC on the <code>SlavaUkraine</code> dataset</figcaption>
+							</figure>
+						</div>
+					</div>
+				</div>
+						
+				<!-- Scatterplot Matricies -->
+				<div class="row wow fadeInLeft pt-5 with-btm-border" data-wow-delay="500ms" data-wow-duration="500ms">
+					<div class="col-lg-6">
+						<div class="block wow fadeInLeft" data-wow-delay="1200ms" data-wow-duration="500ms">
+							<h3 id="scatter-matrix-protos">Scatterplot Matrix<a name="design_matrix"></a></h3>
+							<h4 class="subtitle-des">Visualize impact of dimensions through PCA</h4>
+							<p><em>In Progress</em></p>
+						</div>
+					</div>
+				</div>
+						
+				<!-- Diverging Bar Charts -->
+				<div class="row wow fadeInLeft pt-5 with-btm-border" data-wow-delay="500ms" data-wow-duration="500ms">
+					<div class="col-lg-6">
+						<div class="block wow fadeInLeft" data-wow-delay="1300ms" data-wow-duration="500ms">
+							<h3 id="div-bar-protos">Diverging Bar Charts<a name="design_diverging"></a></h3>
+							<h4 class="subtitle-des">Show most common features/words and their coefficient values (indicators of the relationship between a value and the predicted output)</h4>
+							<figure>
+								<img class="fit-window center-block" src="../assets/images/final/linearSVC_coefficients.png" referrerpolicy="no-referrer" alt="linearSVC_coefficients">
+								<figcaption>LinearSVC coefficients of top 20 words in <code>SlavaUkraine</code> dataset</figcaption>
+							</figure>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- Must-Have Features -->
+		
+		<section id="feature">
+			<div class="container">
+				<div class="section-heading">
+					<h1 class="wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">Must-Have Features<a name="must_have"></a></h1>
+				</div>
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="block">
+							<ul start='' >
+								<li><p>Sentiment visualization of the <code>SlavaUkraine</code> dataset</p>
+									<ul start='' >
+										<li><p><a href='#design_pie'>Pie Charts</a></p></li>
+										<li><p><a href='#design_bar'>Bar Charts</a></p></li>
+									</ul>
+								</li>
+								<li><p>Show most common hashtags &amp; usernames with their associated sentiment</p>
+									<ul start='' >
+										<li><p><a href='#design_bar'>Bar Charts</a></p></li>
+									</ul>
+								</li>
+								<li><p>Figure showing the sentiment of the more general dataset based on inferences from the <code>SlavaUkraine</code> model</p>
+									<ul start='' >
+										<li><p><a href='#design_pie'>Pie Charts</a></p></li>
+										<li><p><a href='#design_bar'>Bar Charts</a></p></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- Optional Features-->
+		
+		<section id="feature">
+			<div class="container">
+				<div class="section-heading">
+					<h1 class="wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">Optional Features<a name="optionals"></a></h1>
+				</div>
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="block">
+							<ul start='' >
+								<li><p>Word cloud to show frequency of words</p>
+									<ul start='' >
+										<li><p><a href='#design_cloud'>Word Cloud</a></p></li>
+									</ul>
+								</li>
+								<li><p>Coefficient plots to show the significant variables in the model</p>
+									<ul start='' >
+										<li><p><a href='#design_diverging'>Diverging Bar Chart</a></p></li>	
+									</ul>
+								</li>
+								<li><p>Performance of model in prediction and training</p>
+									<ul start='' >
+										<li><p><a href='#design_confusion'>Confusion Matrix/Heat Map</a></p></li>
+										<li><p><a href='#design_line'>Line Chart</a></p></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- Goal Features -->
+		
+		<section id="feature">
+			<div class="container">
+				<div class="section-heading">
+					<h1 class="wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">Goal Features<a name="goals"></a></h1>
+				</div>
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="block">
+							<ul>
+								<li><p>A time based visualization to show sentiment on a dataset over time using a <a href='#design_line'>Line Chart</a></p></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- Project Schedule -->
+		
+		<section id="feature">
+			<div class="container">
+				<div class="section-heading">
+					<h1 class="wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">Project Schedule<a name="schedule"></a></h1>
+				</div>
+				<div class="row">
+					<div class="col-lg-6">
+						<figure>
+							<table>
+								<thead>
+									<tr>
+										<th>Date</th><th>Task/Milestone</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>3/9</td><td>- Conducted research<br>- Selected data &amp; framed problem<br>- Implemented initial round of data processing</td>
+									</tr>
+									<tr>
+										<td><strong>3/11</strong></td><td>Project Proposal &amp; Proposal Feedback</td>
+									</tr>
+									<tr>
+										<td>3/16</td><td>- Incorporate user input for determining cluster sentiment into pipeline...</td>
+									</tr>
+									<tr>
+										<td>3/21</td><td>- Link pipeline to live data (ie. pull directly from Kaggle)<br>- Debug <a href='#part1_pipeline'>Part 1</a> &amp; <a href='#part2_pipeline'>Part 2</a> pipelines</td>
+									</tr>
+									<tr>
+										<td><strong>3/23</strong></td><td>Revised Proposal, Related Work, and Website</td>
+									</tr>
+									<tr>
+										<td>3/30</td><td>- Implement <a href='#part3_pipeline'>Part 3</a> pipeline<br>- Begin building Part 1 visualizations in D3.js<br>- Build template for final presentation platform</td>
+									</tr>
+									<tr>
+										<td><strong>4/6</strong></td><td>Alpha Release</td>
+									</tr>
+									<tr>
+										<td>4/13</td><td>- Complete Part 1 &amp; Part 2 vizualizations in D3.js<br>- Intgrate completed vizualizations into the final presentation template<br>- Build time-based analysis into <a href='#part3_pipeline'>Part 3</a> pipeline<br>- Mock Part 3 visualizations in Python</td>
+									</tr>
+									<tr>
+										<td><strong>4/20</strong></td><td>Beta Release</td>
+									</tr>
+									<tr>
+										<td>4/25</td><td>- Incorporate any additional features into vizualizations (tooltips, interactivity, etc.)<br>- Build Part 3 visualizations in D3.js<br>- Integrate Part 3 visualizations into the final presentation<br>- Write script for presentation/demo video</td>
+									</tr>
+									<tr>
+										<td><strong>5/9</strong></td><td>Final Project Presentations</td>
+									</tr>
+									<tr>
+										<td>5/11</td><td>- Outline project report</td>
+									</tr>
+									<tr>
+										<td><strong>5/16</strong></td><td>Project Report Draft</td>
+									</tr>
+									<tr>
+										<td>5/18</td><td>- Finalize project report<br>- Clean up and package materials</td>
+									</tr>
+									<tr>
+										<td><strong>5/19</strong></td><td>All Project Content</td>
+									</tr>
+									<tr>
+										<td>*<strong>bold</strong> indicates course deadline</td><td>&nbsp;</td>
+									</tr>
+								</tbody>
+							</table>
+						</figure>
+					</div>
+				</div>
+			</div>
+		</section>
+	</section>
+</body>
+
+<!-- Footer -->
+
+<footer id="footer">
+	<div class="container">
+		<div class="row content-justify-between mt-5">
+			<div class="col-md-8 col-12 text-center text-lg-left text-md-left">
+				<ul>
+					<li>By Peter Gish</li>
+					<li>USF CS Department</li>
+					<li>Spring 2022</li>
+				</ul>
+				<p class="copyright">
+					Copyright: Design by <a href="http://www.Themefisher.com" target="_blank">Themefisher</a>. <br> 
+				</p>
+			</div>
+			
+			<div class="col-md-4 col-12">
+				<!-- Social Media -->
+				<ul class="social text-center text-md-right text-lg-right">
+					<li>
+						
+						<a href="https://github.com/peterg7" class="icon" target="_blank">
+							<i class="ion-social-github"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in/peter-gish/" class="icon" target="_blank">
+							<i class="ion-social-linkedin"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-- Template Javascript Files -->
+<!-- jquery -->
+<script src="../assets/plugins/jQurey/jquery.min.js"></script>
+<!-- Form Validation -->
+<script src="../assets/plugins/form-validation/jquery.form.js"></script> 
+<script src="../assets/plugins/form-validation/jquery.validate.min.js"></script>
+<!-- slick slider -->
+<script src="../assets/plugins/slick/slick.min.js"></script>
+<!-- bootstrap js -->
+<script src="../assets/plugins/bootstrap/bootstrap.min.js"></script>
+<!-- wow js -->
+<script src="../assets/plugins/wow-js/wow.min.js"></script>
+<!-- slider js -->
+<script src="../assets/plugins/slider/slider.js"></script>
+<!-- Fancybox -->
+<script src="../assets/plugins/fancybox/jquery.fancybox.js"></script>
+<!-- template main js -->
+<script src="../style/js/main.js"></script>
+</html>
