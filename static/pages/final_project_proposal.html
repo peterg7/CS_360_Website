@@ -36,26 +36,44 @@
 <body>
 	
 	<!-- Navbar -->
-	
+
 	<section class="top-bar animated-header">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<nav class="navbar navbar-expand-lg navbar-light bg-light">
-						<a class="navbar-brand" href="https://www.cs.usfca.edu/~apjoshi/cs360/index.html">
-							<img src="../assets/images/usf_cs.png" alt="USF CS Department">
-						</a>
+        <div class="container" >
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <a class="navbar-brand" href="https://www.cs.usfca.edu/~apjoshi/cs360/index.html">
+                            <img src="../assets/images/usf_cs.png" alt="USF CS Department">
+                        </a>
 						<li class="nav-item">
-							<a class="nav-link" href="index.html">Home
+							<a class="nav-link" href="../index.html">Portfolio Home
 								<span class="sr-only">(current)</span>
 							</a>
 						</li>
-						
-					</nav>
-				</div>
-			</div>
-		</div>
-	</section>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto">
+								<li class="nav-item">
+                                    <a class="nav-link" href="javascript:history.back()">Project Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#final_project">Proposal</a>
+                                </li>
+								<li class="nav-item">
+                                    <a class="nav-link" href="#final_project">Visualizations</a>
+                                </li>
+								<li class="nav-item">
+                                    <a class="nav-link" href="#final_project">Analysis</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
 	
 	<!-- Header -->
 	
@@ -63,7 +81,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<div class="block">
+					<div class="block fadeInUp" data-wow-delay=".3s">
 						<h1>CS 360 - Final Project Proposal</h1>
 					</div>
 				</div>
@@ -120,7 +138,13 @@
 					<h1 class="wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">Background &amp; Motivation</h1>
 				</div>
 				<div class="block wow fadeInLeft" data-wow-delay=".5s" data-wow-duration="600ms">
-					<p>I believe that analyzing current, real-time data allows for especially meaningful insights due to their relevancy. 
+					<p>A large part of data science is finding trends within data that are impossible for humans to detect due to scale or complexity.
+						A topic that possess these qualities is one of the most pressing current events; the war between Russia and Ukraine. 
+						In today's data-filled world, this event is mass producing information, most of which is open to the public but it's overwhelmingly vast. 
+						One such medium for this data is Twitter, the social media platform where people make short textual posts for their followers to see.
+						By analyzing tweets, spefically ones related to Russia and Ukraine, certain trends can be detected regarding the <i>way</i> people are writing about the war.<br /><br />
+						
+						I believe that analyzing current, real-time data allows for especially meaningful insights due to their relevancy. 
 						It also can lead to predictions or estimations that are highly accurate because of the temporal proximity. 
 						A large part of data science is finding trends within data that are impossible for humans to detect due to scale or complexity. 
 						For these reasons, one of the most pressing current events is the war between Russia and Ukraine which, in today&#39;s data-filled world, 
@@ -135,6 +159,7 @@
 			</div>
 		</section>
 		
+		<!-- Objectives -->
 		
 		<section id="feature">
 			<div class="container">
@@ -143,7 +168,7 @@
 				</div>
 				<div class="row wow fadeInLeft with-btm-border" data-wow-delay="500ms" data-wow-duration="600ms">
 					<div class="column-lg-6">
-						<h3 id='part-1'>Part 1</h3>
+						<h3 id='part-1'>Part 1 <a name="objective_1"></a></h3>
 						<ol start='' >
 							<li><p>What is the estimated, <em>current</em> sentiment of (presumably Ukranian patriot) &quot;tweeters&quot; when posting about the Ukraine, President Zelensky, and as an extension, the war with Russia (as identified using the #SlavaUkraini hashtag)?</p></li>
 							<li><p>When looking at various features of Twitter, what evidence supports or rejects the above estimated sentiment (ie. usernames, hashtags, retweets, keywords,...)</p></li>
@@ -152,7 +177,7 @@
 				</div>
 				<div class="row wow fadeInLeft with-btm-border" data-wow-delay="800ms" data-wow-duration="600ms">
 					<div class="column-lg-6">
-						<h3 id='part-2'>Part 2</h3>
+						<h3 id='part-2'>Part 2 <a name="objective_2"></a></h3>
 						<ol start='' >
 							<li><p>What is the inferred sentiment and accuracy when applying a predictive model trained on the #SlavaUkraini data to a more general dataset of tweets which involve Russia and/or Ukraine?</p></li>
 							<li><p><em>(How have tweets changed over time?)</p></em></li>
@@ -161,7 +186,7 @@
 				</div>
 				<div class="row wow fadeInLeft" data-wow-delay="1100ms" data-wow-duration="600ms">
 					<div class="column-lg-6">
-						<h3 id='part-3'>Part 3</h3>
+						<h3 id='part-3'>Part 3 <a name="objective_3"></a></h3>
 						<ol start='' >
 							<li><p>Adding the broader dataset to the training set of the predictive model, what is the <em>predicted</em> sentiment of tweets regarding Russia and/or Ukraine at time <em>t</em> from the present date?</p>
 								<ul>
@@ -297,7 +322,7 @@
 					</p>
 				</div>
 				<div class="row wow fadeInLeft with-btm-border" data-wow-delay="300ms" data-wow-duration="500ms">
-					<div class="col-lg-6 wow fadeInLeft" data-wow-delay="500ms" data-wow-duration="500ms">
+					<div class="col-lg-12 wow fadeInLeft" data-wow-delay="500ms" data-wow-duration="500ms">
 						<h2 id="part1-pipeline">Part 1 Pipeline<a name="part1_pipeline"></a></h2>
 						<div class="block m-3 pt-3 wow fadeInLeft" data-wow-delay="700ms" data-wow-duration="500ms">
 							<h4 id="part1-extract">Extract<a name="part1_extract"></a></h4>
@@ -320,7 +345,7 @@
 								</li>
 							</ol>
 						</div>
-						<div class="block m-3 pt-3 wow fadeInLeft" data-wow-delay="900ms" data-wow-duration="500ms">
+						<div class="block m-3 pt-3 wow fadeInLeft" data-wow-delay="800ms" data-wow-duration="500ms">
 							<h4 id="part1-transform">Transform<a name="part1_transform"></a></h4>
 							<ol start='' >
 								<li><p>Collect bigrams from tweet text</p></li>
@@ -332,7 +357,7 @@
 								<li><p>Store sentiment of every tweet extracted from clusters</p></li>
 							</ol>
 						</div>
-						<div class="block m-3 pt-3 wow fadeInLeft" data-wow-delay="1100ms" data-wow-duration="500ms">
+						<div class="block m-3 pt-3 wow fadeInLeft" data-wow-delay="900ms" data-wow-duration="500ms">
 							<h5 id="part1-model">Model<a name="part1_model"></a></h5>
 							<ol start='' >
 								<li><p>Build training and testing datasets from the sentiment dataframe built above</p></li>
@@ -345,7 +370,7 @@
 								<li><p>Export the &quot;higher performing&quot; algorithm to be used in Part 2</p></li>
 							</ol>
 						</div>
-						<div class="block m-3 pt-3 wow fadeInLeft" data-wow-delay="1300ms" data-wow-duration="500ms">
+						<div class="block m-3 pt-3 pb-3 wow fadeInLeft" data-wow-delay="1000ms" data-wow-duration="500ms">
 							<h4 id="part1-load">Load<a name="part1_load"></a></h4>
 							<ol start='' >
 								<li><p>Save datasets &amp; embeddings along pipeline to local directory</p></li>
@@ -355,7 +380,7 @@
 					</div>
 				</div>
 				<div class="row pt-5 wow fadeInLeft with-btm-border" data-wow-delay="300ms" data-wow-duration="500ms">
-					<div class="col-lg-6 wow fadeInLeft" data-wow-delay="500ms" data-wow-duration="500ms">
+					<div class="col-lg-12 wow fadeInLeft" data-wow-delay="500ms" data-wow-duration="500ms">
 						<h2 id="part2-pipeline">Part 2 Pipeline<a name="part2_pipeline"></a></h2>
 						<div class="block m-3 pt-3 wow fadeInLeft" data-wow-delay="700ms" data-wow-duration="500ms">
 							<h4 id="part2-extract">Extract<a name="part2_extract"></a></h4>
@@ -363,7 +388,7 @@
 								<li><p>- Same as <a href='#part1_extract'>Part 1 Pipeline - Extract</a> with the generalized dataset described in <a href='#data'>Data</a></p></li>
 							</ul>
 						</div>
-						<div class="block m-3 pt-3 wow fadeInLeft" data-wow-delay="900ms" data-wow-duration="500ms">
+						<div class="block m-3 pt-3 wow fadeInLeft" data-wow-delay="800ms" data-wow-duration="500ms">
 							<h4 id="part2-transform">Transform<a name="part2_transform"></a></h4>
 							<ol start='' >
 								<li><p>Import vector model created in <a href='#part1_transform'>Part 1 Pipeline - Transform</a></p></li>
@@ -373,7 +398,7 @@
 								<li><p>Map model outputs to sentiment encodings and original tweets</p></li>
 							</ol>
 						</div>
-						<div class="block m-3 pt-3 wow fadeInLeft" data-wow-delay=1100ms data-wow-duration="500ms">
+						<div class="block m-3 pt-3 pb-3 wow fadeInLeft" data-wow-delay=900ms data-wow-duration="500ms">
 							<h4 id="part2-load">Load<a name="part2_load"></a></h4>
 							<ol>
 								<li><p>Save inferred sentiment dataset to a local directory for analysis/visualization</p></li>
@@ -382,7 +407,7 @@
 					</div>
 				</div>
 				<div class="row pt-5 wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="500ms">
-					<div class="col-lg-6 wow fadeInLeft" data-wow-delay="500ms" data-wow-duration="500ms">
+					<div class="col-lg-12 wow fadeInLeft" data-wow-delay="500ms" data-wow-duration="500ms">
 						<h2 id="part3-pipeline">Part 3 Pipeline<a name="part3_pipeline"></a></h2>
 						<div class="block m-3 pt-3 wow fadeInLeft" data-wow-delay="700ms" data-wow-duration="500ms">
 							<h4 id="part3-extract">Extract<a name="part3_extract"></a></h4>
@@ -390,14 +415,14 @@
 								<li><p>Same as <a href='#part1_extract'>Part 1 Pipeline - Extract</a> but with <em>both</em> datasets described in <a href='#data'>Data</a> (which will be merged into one)</p></li>
 							</ul>
 						</div>
-						<div class="block m-3 pt-3 wow fadeInLeft" data-wow-delay="900ms" data-wow-duration="500ms">
+						<div class="block m-3 pt-3 wow fadeInLeft" data-wow-delay="800ms" data-wow-duration="500ms">
 							<h4 id="part3-transform">Transform<a name="part3_transform"></a></h4>
 							<ul>
 								<li><p>Same as <a href='#part1_transform'>Part 1 Pipeline - Transform</a> with combined dataset</p></li>
 								<li><p>Group dataset by time to be used in a time-series predictive model</p></li>
 							</ul>
 						</div>
-						<div class="block m-3 pt-3 wow fadeInLeft" data-wow-delay="1100ms" data-wow-duration="500ms">
+						<div class="block m-3 pt-3 wow fadeInLeft" data-wow-delay="900ms" data-wow-duration="500ms">
 							<h5 id="part3-model">Model<a name="part3_model"></a></h5>
 							<ol start='' >
 								<li><p>Build highest performing model on the combined dataset just as in <a href='#part1_model'>Part 1 Pipeline - (Model)</a>. But this time using a model optimized for a time-series:</p>
@@ -415,7 +440,7 @@
 								</li>
 							</ol>
 						</div>
-						<div class="block m-3 pt-3 wow fadeInLeft" data-wow-delay="1300ms" data-wow-duration="500ms">
+						<div class="block m-3 pt-3 wow fadeInLeft" data-wow-delay="1000ms" data-wow-duration="500ms">
 							<h4 id="part3-load">Load<a name="part3_load"></a></h4>
 							<ul>
 								<li><p>Same as <a href='#part1_load'>Part 1 Pipeline - Load</a> with combined dataset</p></li>
@@ -441,120 +466,126 @@
 						</figure>
 					</div>
 				</div>
-				<div class="row wow fadeInLeft" data-wow-delay="500ms" data-wow-duration="500ms">
+				<div class="row wow fadeInLeft mb-4" data-wow-delay="500ms" data-wow-duration="500ms">
 					<div class="col-lg-6">
 						<h2 id="viz-prototypes">Prototypes</h2>
 						<p><em>Note: The actual values are not finalized, the modeling process is still under construction</em></p>
 					</div>
 				</div>
-
+				
 				<!-- Bar Charts -->
-				<div class="row wow fadeInLeft" data-wow-delay="500ms" data-wow-duration="500ms">
-					<div class="col-lg-6">
-						<div class="wow fadeInLeft" data-wow-delay="700ms" data-wow-duration="500ms">
-							<h3 id="bar-chart-protos">Bar Charts <a name="design_bar"></a></h3>
-							<h4 class="subtitle-des">Indicating sentiment around words, hashtags, and usernames</h4>
-							<figure>
-								<img class="fit-window center-block" src="../assets/images/final/russia_sentiment.png" referrerpolicy="no-referrer" alt="russia_sentiment">
-								<figcaption>Sentiment of the keyword <code>russia</code> on SlavaUkraine dataset</figcaption>
-							</figure>
-							<figure>
-								<img class="fit-window center-block" src="../assets/images/final/most_common_hashtags.png" referrerpolicy="no-referrer" alt="slava_top_10_hashtags">
-								<figcaption>Sentiment of the top 10 most frequent hashtags on <code>SlavaUkraine</code> dataset</figcaption>
-							</figure>
-						</div>
+				<div class="row m-3 pt-5 with-btm-border">
+					<div class="wow fadeInUp center-block" data-wow-delay="500ms" data-wow-duration="500ms">
+						<h3 id="bar-chart-protos">Bar Charts <a name="design_bar"></a></h3>
+						<h4 class="subtitle-des">Indicating sentiment around words, hashtags, and usernames</h4>
+					</div>
+					<div class="wow fadeInUp center-block" data-wow-delay="700ms" data-wow-duration="500ms">
+						<figure class="center-block">
+							<img class="fit-window center-block" src="../assets/images/final/russia_sentiment.png" referrerpolicy="no-referrer" alt="russia_sentiment">
+							<figcaption>Sentiment of the keyword <code>russia</code> on SlavaUkraine dataset</figcaption>
+						</figure>
+						<figure class="center-block">
+							<img class="fit-window center-block" src="../assets/images/final/most_common_hashtags.png" referrerpolicy="no-referrer" alt="slava_top_10_hashtags">
+							<figcaption>Sentiment of the top 10 most frequent hashtags on <code>SlavaUkraine</code> dataset</figcaption>
+						</figure>
 					</div>
 				</div>
-
+				
 				<!-- Pie Charts-->
-				<div class="row wow fadeInLeft pt-5 with-btm-border" data-wow-delay="500ms" data-wow-duration="500ms">
-					<div class="col-lg-6">
-						<div class="wow fadeInLeft" data-wow-delay="800ms" data-wow-duration="500ms">
-							<h3 id="pie-chart-protos">Pie Charts<a name="design_pie"></a></h3>
-							<h4 class="subtitle-des">Indicating the proportions of sentiment within subsects of the data</h4>
-							<figure>
-								<img class="fit-window center-block" src="../assets/images/final/word_sentiment_distrib.png" referrerpolicy="no-referrer" alt="sentiment_distribution_words">
-								<figcaption>Distribution of sentiment for all words in the <code>SlavaUkraine</code> dataset</figcaption>
-							</figure>
-							<figure>
-								<img class="fit-window center-block" src="../assets/images/final/tweet_sentiment_distrib.png" referrerpolicy="no-referrer" alt="sentiment_distribution_tweets">
-								<figcaption>Distribution of sentiment for all tweets in the <code>SlavaUkraine</code> dataset</figcaption>
-							</figure>
-						</div>
+				<div class="row m-3 pt-5 with-btm-border">
+					<div class="wow fadeInRight center-block" data-wow-delay="600ms" data-wow-duration="500ms">
+						<h3 id="pie-chart-protos">Pie Charts<a name="design_pie"></a></h3>
+						<h4 class="subtitle-des">Indicating the proportions of sentiment within subsects of the data</h4>
+					</div>
+					<div class="wow fadeInRight center-block" data-wow-delay="800ms" data-wow-duration="500ms">
+						<figure class="center-block">
+							<img class="fit-window center-block" src="../assets/images/final/word_sentiment_distrib.png" referrerpolicy="no-referrer" alt="sentiment_distribution_words">
+							<figcaption>Distribution of sentiment for all words in the <code>SlavaUkraine</code> dataset</figcaption>
+						</figure>
+						<figure class="center-block">
+							<img class="fit-window center-block" src="../assets/images/final/tweet_sentiment_distrib.png" referrerpolicy="no-referrer" alt="sentiment_distribution_tweets">
+							<figcaption>Distribution of sentiment for all tweets in the <code>SlavaUkraine</code> dataset</figcaption>
+						</figure>
 					</div>
 				</div>
-						
+				
+				<!-- Confusion Matricies-->
+				<div class="row m-3 pt-5 with-btm-border">
+					<div class="wow fadeInLeft center-block" data-wow-delay="1200ms" data-wow-duration="500ms">
+						<figure class="center-block">
+							<img class="fit-window center-block" src="../assets/images/final/linearSVC_confusion_matrix.png" referrerpolicy="no-referrer" alt="linearSVC_confusion_matrix">
+							<figcaption>Evaluation of a LinearSVC on the <code>SlavaUkraine</code> dataset</figcaption>
+						</figure>
+					</div>
+					<div class="wow fadeInLeft center-block" data-wow-delay="800ms" data-wow-duration="500ms">
+						<h3 id="conf-matrix-protos">Confusion Matrix (Modified Heat Map)</h3>
+						<h4 class="subtitle-des">Displays performance/accuracy of a model</h4>
+					</div>
+				</div>
+				
+				<!-- Word Clouds-->
+				<div class="row m-3 pt-5 with-btm-border">
+					<div class="wow fadeInRight center-block" data-wow-delay="700ms" data-wow-duration="500ms">
+						<h3 id="word-cloud-protos">Word Clouds<a name="design_cloud"></a></h3>
+						<h4 class="subtitle-des">Display the most common words given a keyword or dataset feature</h4>
+					</div>
+					<div class="wow fadeInRight center-block" data-wow-delay="1000ms" data-wow-duration="500ms">
+						<figure class="center-block">
+							<img class="fit-window center-block" src="../assets/images/final/positive_sentiment_words.png" referrerpolicy="no-referrer" alt="all_words_cloud">
+							<figcaption>All positive words in <code>SlavaUkraine</code> dataset</figcaption>
+						</figure>
+						<figure class="center-block">
+							<img class="fit-window center-block" src="../assets/images/final/negative_sentiment_words.png" referrerpolicy="no-referrer" alt="positive_words_cloud">
+							<figcaption>All negative words in <code>SlavaUkraine</code> dataset</figcaption>
+						</figure>
+					</div>
+				</div>
+				
+				<!-- Diverging Bar Charts -->
+				<div class="row m-3 pt-5 with-btm-border">
+					<div class="wow fadeInUp center-block" data-wow-delay="1000ms" data-wow-duration="500ms">
+						<h3 id="div-bar-protos">Diverging Bar Charts<a name="design_diverging"></a></h3>
+						<h4 class="subtitle-des">Show most common features/words and their coefficient values (indicators of the relationship between a value and the predicted output)</h4>
+					</div>
+					<div class="wow fadeInUp center-block" data-wow-delay="1400ms" data-wow-duration="500ms">
+						<figure class="center-block">
+							<img class="fit-window center-block" src="../assets/images/final/linearSVC_coefficients.png" referrerpolicy="no-referrer" alt="linearSVC_coefficients">
+							<figcaption>LinearSVC coefficients of top 20 words in <code>SlavaUkraine</code> dataset</figcaption>
+						</figure>
+					</div>
+				</div>
+				
 				<!-- Line Charts-->
-				<div class="row wow fadeInLeft pt-5 with-btm-border" data-wow-delay="500ms" data-wow-duration="500ms">
-					<div class="col-lg-6">
-						<div class="wow fadeInLeft" data-wow-delay="900ms" data-wow-duration="500ms">
+				<div class="row m-3 pt-5 with-btm-border">
+					<div class="col-lg-8 center-block">
+						<div class="wow fadeInLeft center-align" data-wow-delay="700ms" data-wow-duration="500ms">
 							<h3 id="line-chart-protos">Line Charts<a name="design_line"></a></h3>
 							<h4 class="subtitle-des">Illustrating trends in the data and model <u>over time</u></h4>
+						</div>
+						<div class="block wow fadeInLeft center-block" data-wow-delay="900ms" data-wow-duration="500ms">
 							<ul>
 								<li><p>- 3-variable (negative, neutral, positive) chart to show sentiment of tweets over time</p></li>
-								<li><p>- Performance of model through epochs when testing</p></li>
+								<li><p>- Performance of model through epochs when training/testing</p></li>
 							</ul>
 							<p><em>In Progress</em></p>
 						</div>
 					</div>
 				</div>
-
-				<!-- Word Clouds-->
-				<div class="row wow fadeInLeft pt-5 with-btm-border" data-wow-delay="500ms" data-wow-duration="500ms">
-					<div class="col-lg-6">
-						<div class="wow fadeInLeft" data-wow-delay="1000ms" data-wow-duration="500ms">
-							<h3 id="word-cloud-protos">Word Clouds<a name="design_cloud"></a></h3>
-							<h4 class="subtitle-des">Display the most common words given a keyword or dataset feature</h4>
-							<figure>
-								<img class="fit-window center-block" src="../assets/images/final/positive_sentiment_words.png" referrerpolicy="no-referrer" alt="all_words_cloud">
-								<figcaption>All positive words in <code>SlavaUkraine</code> dataset</figcaption>
-							</figure>
-							<figure>
-								<img class="fit-window center-block" src="../assets/images/final/negative_sentiment_words.png" referrerpolicy="no-referrer" alt="positive_words_cloud">
-								<figcaption>All negative words in <code>SlavaUkraine</code> dataset</figcaption>
-							</figure>
-						</div>
-					</div>
-				</div>
-						
-				<!-- Confusion Matricies-->
-				<div class="row wow fadeInLeft pt-5 with-btm-border" data-wow-delay="500ms" data-wow-duration="500ms">
-					<div class="col-lg-6">
-						<div class="block wow fadeInLeft" data-wow-delay="1100ms" data-wow-duration="500ms">
-							<h3 id="conf-matrix-protos">Confusion Matrix (Modified Heat Map)</h3>
-							<h4 class="subtitle-des">Displays performance/accuracy of a model</h4>
-							<figure>
-								<img class="fit-window center-block" src="../assets/images/final/linearSVC_confusion_matrix.png" referrerpolicy="no-referrer" alt="linearSVC_confusion_matrix">
-								<figcaption>Evaluation of a LinearSVC on the <code>SlavaUkraine</code> dataset</figcaption>
-							</figure>
-						</div>
-					</div>
-				</div>
-						
+				
 				<!-- Scatterplot Matricies -->
-				<div class="row wow fadeInLeft pt-5 with-btm-border" data-wow-delay="500ms" data-wow-duration="500ms">
-					<div class="col-lg-6">
-						<div class="block wow fadeInLeft" data-wow-delay="1200ms" data-wow-duration="500ms">
+				<div class="row m-3 pt-5 with-btm-border">
+					<div class="col-lg-8 center-block">
+						<div class="wow fadeInLeft center-align" data-wow-delay="700ms" data-wow-duration="500ms">
 							<h3 id="scatter-matrix-protos">Scatterplot Matrix<a name="design_matrix"></a></h3>
 							<h4 class="subtitle-des">Visualize impact of dimensions through PCA</h4>
+						</div>
+						<div class="block wow fadeInLeft center-block" data-wow-delay="900ms" data-wow-duration="500ms">
 							<p><em>In Progress</em></p>
 						</div>
 					</div>
 				</div>
-						
-				<!-- Diverging Bar Charts -->
-				<div class="row wow fadeInLeft pt-5 with-btm-border" data-wow-delay="500ms" data-wow-duration="500ms">
-					<div class="col-lg-6">
-						<div class="block wow fadeInLeft" data-wow-delay="1300ms" data-wow-duration="500ms">
-							<h3 id="div-bar-protos">Diverging Bar Charts<a name="design_diverging"></a></h3>
-							<h4 class="subtitle-des">Show most common features/words and their coefficient values (indicators of the relationship between a value and the predicted output)</h4>
-							<figure>
-								<img class="fit-window center-block" src="../assets/images/final/linearSVC_coefficients.png" referrerpolicy="no-referrer" alt="linearSVC_coefficients">
-								<figcaption>LinearSVC coefficients of top 20 words in <code>SlavaUkraine</code> dataset</figcaption>
-							</figure>
-						</div>
-					</div>
-				</div>
+				
+				
 			</div>
 		</section>
 		
@@ -565,23 +596,27 @@
 				<div class="section-heading">
 					<h1 class="wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">Must-Have Features<a name="must_have"></a></h1>
 				</div>
-				<div class="row">
-					<div class="col-lg-6">
+				<div class="row wow fadeInLeft" data-wow-delay=".5s" data-wow-duration="500ms">
+					<div class="col-lg-12">
 						<div class="block">
-							<ul start='' >
-								<li><p>Sentiment visualization of the <code>SlavaUkraine</code> dataset</p>
-									<ul start='' >
+							<ul>
+								<li><p>Sentiment visualization of the <code>SlavaUkraine</code> dataset.
+									This will depict the current sentment of this group's tweeters (<a href='#objective_1'>Objective 1: Part 1</a>)</p>
+									<ul class="pb-3">
 										<li><p><a href='#design_pie'>Pie Charts</a></p></li>
 										<li><p><a href='#design_bar'>Bar Charts</a></p></li>
 									</ul>
 								</li>
-								<li><p>Show most common hashtags &amp; usernames with their associated sentiment</p>
-									<ul start='' >
+								<li><p>Show most common hashtags & usernames with their associated sentiment. 
+									This will serve as evidence to support or reject the concluded sentiment from Feature 1 (<a href='#objective_1'>Objective 1: Part 2</a>)</p>
+									<ul class="pb-3">
 										<li><p><a href='#design_bar'>Bar Charts</a></p></li>
 									</ul>
 								</li>
-								<li><p>Figure showing the sentiment of the more general dataset based on inferences from the <code>SlavaUkraine</code> model</p>
-									<ul start='' >
+								<li><p>Figure showing the sentiment of the more general dataset based on inferences 
+									from the <code>SlavaUkraine</code> model. The figure will provide insight into the generalizability 
+									of the model from trained on the <code>SlavaUkraine</code> data (<a href='#objective_2'>Objective 2: Part 1</a>)</p>
+									<ul>
 										<li><p><a href='#design_pie'>Pie Charts</a></p></li>
 										<li><p><a href='#design_bar'>Bar Charts</a></p></li>
 									</ul>
@@ -600,22 +635,29 @@
 				<div class="section-heading">
 					<h1 class="wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">Optional Features<a name="optionals"></a></h1>
 				</div>
-				<div class="row">
-					<div class="col-lg-6">
+				<div class="row wow fadeInLeft" data-wow-delay=".5s" data-wow-duration="500ms">
+					<div class="col-lg-12">
 						<div class="block">
-							<ul start='' >
-								<li><p>Word cloud to show frequency of words</p>
-									<ul start='' >
+							<ul>
+								<li><p>Word cloud to show frequency of words. If included, these figures would provide 
+									additional evidence for <a href='#objective_1'>Objective 1: Part 2</a> in a more abstract way.</p>
+									<ul class="pb-3">
 										<li><p><a href='#design_cloud'>Word Cloud</a></p></li>
 									</ul>
 								</li>
-								<li><p>Coefficient plots to show the significant variables in the model</p>
-									<ul start='' >
+								<li><p>Coefficient plots to show the significant variables in the model. 
+									These plots are effective for seeing "behind the scenes" of a trained model 
+									and would provide alternative depictations for model evaluation (relevant to all Objectives)</p>
+									<ul class="pb-3">
 										<li><p><a href='#design_diverging'>Diverging Bar Chart</a></p></li>	
 									</ul>
 								</li>
-								<li><p>Performance of model in prediction and training</p>
-									<ul start='' >
+								<li><p>Performance of model in testing. Similarly to the diverging bar chart and scatterplot matrix, 
+									these visualizations are targeted towards statistics of a model. This includes a heat-map
+									confusion matrix (showing false positives, false negatives, etc.) and line charts to trace the 
+									model's performance in training (path towards convergence, rolling accuracy, etc.). 
+									These visualizations would target <a href='#objective_2'>Objective 2: Part 1</a> when analyzing the model's accuracy</p>
+									<ul>
 										<li><p><a href='#design_confusion'>Confusion Matrix/Heat Map</a></p></li>
 										<li><p><a href='#design_line'>Line Chart</a></p></li>
 									</ul>
@@ -634,12 +676,107 @@
 				<div class="section-heading">
 					<h1 class="wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">Goal Features<a name="goals"></a></h1>
 				</div>
-				<div class="row">
-					<div class="col-lg-6">
+				<div class="row wow fadeInLeft" data-wow-delay=".5s" data-wow-duration="500ms">
+					<div class="col-lg-12">
 						<div class="block">
 							<ul>
-								<li><p>A time based visualization to show sentiment on a dataset over time using a <a href='#design_line'>Line Chart</a></p></li>
+								<li><p>Time-based visualization tracking the inferred sentiment of tweets to be updated daily 
+									(frequency of dataset update) and will extend into the future. This will capture the big 
+									picture of the project by providing an aggregated dataset in an easily digestible form 
+									for the reader to make powerful conclusions (<a href='#objective_3'>Objective 3: Part 1</a>).</p>
+									<ul>
+										<li><p><a href='#design_line'>Line Chart</a></p></li>
+									</ul>
+								</li>
 							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- Related Works -->
+		
+		<section id="related-items">
+			<div class="container">
+				<div class="section-heading">
+					<h1 class="wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">Related Works<a name="related"></a></h1>
+				</div>
+				<div class="row wow fadeInLeft" data-wow-delay=".5s" data-wow-duration="500ms">
+					<div class="col-lg-12">
+						<div class="block">
+							<p class="pb-4">Research performed by other groups/organizations in the space of sentiment analysis. Some papers
+								dealt specifically with Twitter data while others dealt with the task of unsupervised sentiment 
+								analysis with other source data. All of these papers are directly related to this project's overarching
+								task of using Twitter data to infer the attitude of the public regarding the political and social crisis
+								that is occuring between Russia and the Ukaraine. 
+							</p>
+							<ol>
+								<li>
+									Wang, H., Can, D., Kazemzadeh, A., Bar, F., & Narayanan, S. (2012, July). 
+									A system for real-time twitter sentiment analysis of 2012 us presidential election cycle. 
+									In *Proceedings of the ACL 2012 system demonstrations* (pp. 115-120).
+									<ul>
+										<li><p>Wang et. al explore the use of sentiment analaysis on real-time Twitter data produced in 
+											response to significant news or events, specifically during the 2012 US Presidential election. 
+											The goal of the study is to provide instant analysis of the public's opinion of the election 
+											based on specific, related events.</p>
+										</li>
+									</ul>
+								</li>
+								<li>
+									Go, A., Huang, L., & Bhayani, R. (2009). Twitter sentiment analysis. *Entropy*, *17*, 252.
+									<ul>
+										<li><p>Go et. al experiment with basic supervised learning sentiment analysis techniques using 
+											Twitter data. The purpose was to determine the accuracy of an algorithm which can be trained and 
+											used to predict the sentiment of a given query word.</p>
+										</li>
+									</ul>
+								</li>
+								<li>
+									Mittal, A., & Goel, A. (2012). Stock prediction using twitter sentiment analysis. 
+									*Standford University, CS229 (2011 http://cs229. stanford. 
+									edu/proj2011/GoelMittal-StockMarketPredictionUsingTwitterSentimentAnalysis. pdf)*, *15*, 2352.
+									<ul>
+										<li><p>The big-picture of the paper is analyzing the relationship between the world of social media 
+											and the financial world. After determining the sentiment of the public using Twitter, the trained 
+											algorithm was used to predict the stock market movements.</p>
+										</li>
+									</ul>
+								</li>
+								<li>
+									Fernández-Gavilanes, M., Alvarez-López, T., Juncal-Martínez, J., Costa-Montenegro, E., & González-Castano, 
+									F. J. (2015, June). Gti: An unsupervised approach for sentiment analysis in twitter. 
+									In *Proceedings of the 9th International Workshop on Semantic Evaluation (SemEval 2015)* (pp. 533-538).
+									<ul>
+										<li><p>The emergence of electrical cars has brought about mixed feelings by the public regarding efficiency, 
+											safety, and reliability. Using news articles and customer reviews, Everts and Jiang explore the public's 
+											sentiment of EV cars and attempt to determine their sources.</p>
+										</li>
+									</ul>
+								</li>
+								<li>
+									Everts, J., & Jiang, X. (2021). Making sense of electrical vehicle discussions using sentiment analysis 
+									on closely related news and user comments. *arXiv preprint arXiv:2112.12327*.
+									<ul>
+										<li><p>Yu et. al research a way to identify students who are unlikely to pass a certain course. 
+											They combined early assessment work (homeworks, quizzes, etc.) with the results of sentiment
+											analysis performed on student's self-evaluated comments.</p>
+										</li>
+									</ul>
+								</li>
+								<li>
+									Bermingham, A., & Smeaton, A. (2011, November). On using Twitter to monitor political sentiment and 
+									predict election results. In Proceedings of the Workshop on Sentiment Analysis where AI meets Psychology 
+									(SAAIP 2011) (pp. 2-10).
+									<ul>
+										<li><p>Guda et. al inspect the performance of various machine learning techniques in their ability
+											to predict the sentiment of restaurant reviews. Each algorithm is given the meta and text data 
+											associated with the reviews and is tasked with determining the overall sentiment of customers.</p>
+										</li>
+									</ul>
+								</li>
+							</ol>
 						</div>
 					</div>
 				</div>
@@ -653,8 +790,8 @@
 				<div class="section-heading">
 					<h1 class="wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">Project Schedule<a name="schedule"></a></h1>
 				</div>
-				<div class="row">
-					<div class="col-lg-6">
+				<div class="row wow fadeInLeft" data-wow-delay=".5s" data-wow-duration="500ms">
+					<div class="col-lg-6 center-align">
 						<figure>
 							<table>
 								<thead>
@@ -667,7 +804,7 @@
 										<td>3/9</td><td>- Conducted research<br>- Selected data &amp; framed problem<br>- Implemented initial round of data processing</td>
 									</tr>
 									<tr>
-										<td><strong>3/11</strong></td><td>Project Proposal &amp; Proposal Feedback</td>
+										<td><strong>3/11</strong></td><td><strong>Project Proposal &amp; Proposal Feedback</strong></td>
 									</tr>
 									<tr>
 										<td>3/16</td><td>- Incorporate user input for determining cluster sentiment into pipeline...</td>
@@ -676,37 +813,37 @@
 										<td>3/21</td><td>- Link pipeline to live data (ie. pull directly from Kaggle)<br>- Debug <a href='#part1_pipeline'>Part 1</a> &amp; <a href='#part2_pipeline'>Part 2</a> pipelines</td>
 									</tr>
 									<tr>
-										<td><strong>3/23</strong></td><td>Revised Proposal, Related Work, and Website</td>
+										<td><strong>3/23</strong></td><td><strong>Revised Proposal, Related Work, and Website</strong></td>
 									</tr>
 									<tr>
 										<td>3/30</td><td>- Implement <a href='#part3_pipeline'>Part 3</a> pipeline<br>- Begin building Part 1 visualizations in D3.js<br>- Build template for final presentation platform</td>
 									</tr>
 									<tr>
-										<td><strong>4/6</strong></td><td>Alpha Release</td>
+										<td><strong>4/6</strong></td><td><strong>Alpha Release</strong></td>
 									</tr>
 									<tr>
 										<td>4/13</td><td>- Complete Part 1 &amp; Part 2 vizualizations in D3.js<br>- Intgrate completed vizualizations into the final presentation template<br>- Build time-based analysis into <a href='#part3_pipeline'>Part 3</a> pipeline<br>- Mock Part 3 visualizations in Python</td>
 									</tr>
 									<tr>
-										<td><strong>4/20</strong></td><td>Beta Release</td>
+										<td><strong>4/20</strong></td><td><strong>Beta Release</strong></td>
 									</tr>
 									<tr>
 										<td>4/25</td><td>- Incorporate any additional features into vizualizations (tooltips, interactivity, etc.)<br>- Build Part 3 visualizations in D3.js<br>- Integrate Part 3 visualizations into the final presentation<br>- Write script for presentation/demo video</td>
 									</tr>
 									<tr>
-										<td><strong>5/9</strong></td><td>Final Project Presentations</td>
+										<td><strong>5/9</strong></td><td><strong>Final Project Presentations</strong></td>
 									</tr>
 									<tr>
 										<td>5/11</td><td>- Outline project report</td>
 									</tr>
 									<tr>
-										<td><strong>5/16</strong></td><td>Project Report Draft</td>
+										<td><strong>5/16</strong></td><td><strong>Project Report Draft</strong></td>
 									</tr>
 									<tr>
 										<td>5/18</td><td>- Finalize project report<br>- Clean up and package materials</td>
 									</tr>
 									<tr>
-										<td><strong>5/19</strong></td><td>All Project Content</td>
+										<td><strong>5/19</strong></td><td><strong>All Project Content</strong></td>
 									</tr>
 									<tr>
 										<td>*<strong>bold</strong> indicates course deadline</td><td>&nbsp;</td>
@@ -734,6 +871,9 @@
 				</ul>
 				<p class="copyright">
 					Copyright: Design by <a href="http://www.Themefisher.com" target="_blank">Themefisher</a>. <br> 
+				</p>
+				<p class="pt-3">
+					<a href="#top">Back to Top</a>
 				</p>
 			</div>
 			

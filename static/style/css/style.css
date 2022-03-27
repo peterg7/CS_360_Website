@@ -529,7 +529,7 @@ img .fit-window {
     height: 100%;
 }
 
-.row {
+.col-lg-6 {
   position: relative;
 }
 
@@ -556,7 +556,17 @@ img .fit-window {
   display: flex;
   justify-content: center;
   align-items: center;
-  /*height: 200px;*/
+}
+
+table {
+  border-collapse:collapse;
+  border:1px solid rgba(2, 189, 213, 0.4);
+}
+
+table td {
+  border:1px solid rgba(2, 189, 213, 0.4);
+  font-size: 14px;
+  color: #777777;
 }
 
 
@@ -1238,6 +1248,14 @@ article {
 #related-items .block .img-overly .overly a i {
   font-size: 30px;
   color: #fff;
+}
+
+#related-items ol li {
+  padding: 5px 5px;
+}
+
+#related-items li p {
+  color: #8b9191;
 }
 
 .service-page .service-parts .block {
